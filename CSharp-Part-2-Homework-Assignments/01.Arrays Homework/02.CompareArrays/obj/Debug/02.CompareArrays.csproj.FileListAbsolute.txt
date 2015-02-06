@@ -1,0 +1,5 @@
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\02.CompareArrays\bin\Debug\02.CompareArrays.exe.config
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\02.CompareArrays\bin\Debug\02.CompareArrays.exe
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\02.CompareArrays\bin\Debug\02.CompareArrays.pdb
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\02.CompareArrays\obj\Debug\02.CompareArrays.exe
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\02.CompareArrays\obj\Debug\02.CompareArrays.pdb

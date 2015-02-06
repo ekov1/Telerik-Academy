@@ -1,0 +1,9 @@
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\01.AllocateArray\bin\Debug\01.AllocateArray.exe.config
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\01.AllocateArray\bin\Debug\01.AllocateArray.exe
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\01.AllocateArray\bin\Debug\01.AllocateArray.pdb
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\01.AllocateArray\obj\Debug\01.AllocateArray.csprojResolveAssemblyReference.cache
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\01.AllocateArray\obj\Debug\01.AllocateArray.exe
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\01.AllocateArray\obj\Debug\01.AllocateArray.pdb
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\CSharp-Part-2-Homework-Assignments\01.Arrays Homework\01.AllocateArray\bin\Debug\01.AllocateArray.exe.config
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\CSharp-Part-2-Homework-Assignments\01.Arrays Homework\01.AllocateArray\obj\Debug\01.AllocateArray.exe
+C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\CSharp-Part-2-Homework-Assignments\01.Arrays Homework\01.AllocateArray\obj\Debug\01.AllocateArray.pdb
