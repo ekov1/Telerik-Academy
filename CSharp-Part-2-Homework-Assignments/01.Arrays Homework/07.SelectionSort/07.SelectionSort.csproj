@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4B892A7-F5CF-4608-A5B3-FABF6CC3F7B3}</ProjectGuid>
+    <ProjectGuid>{A7010076-9DC6-4B7D-9ADF-5571FB504AFD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_06.MaximalKSum</RootNamespace>
-    <AssemblyName>06.MaximalKSum</AssemblyName>
+    <RootNamespace>_07.SelectionSort</RootNamespace>
+    <AssemblyName>07.SelectionSort</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="06.MaximalKSum.cs" />
+    <Compile Include="07.SelectionSort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

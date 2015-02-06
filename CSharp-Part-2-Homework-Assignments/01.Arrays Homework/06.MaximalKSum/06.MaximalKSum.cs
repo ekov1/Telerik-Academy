@@ -7,10 +7,10 @@
     {
         static void Main()
         {
-            Console.WriteLine("Enter the N parameter: ");
+            Console.Write("Enter the N parameter: ");
             int N = int.Parse(Console.ReadLine());
-            Console.WriteLine("\n You are looking for the K(number of elements) that sum up to the max possible sum of K numbers in the array");
-            Console.WriteLine("Enter the K parameter: ");
+            Console.WriteLine("\nYou are looking for the K(number of elements) that sum up to the max possible sum of K numbers in the array");
+            Console.Write("Enter the K parameter: ");
             int K = int.Parse(Console.ReadLine());
             Console.WriteLine();
             int[] arr = new int[N];
