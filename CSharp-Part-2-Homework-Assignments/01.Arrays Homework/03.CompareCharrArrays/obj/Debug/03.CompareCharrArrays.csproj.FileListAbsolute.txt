@@ -1,9 +1,0 @@
-C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\03.CompareCharrArrays\bin\Debug\03.CompareCharrArrays.exe.config
-C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\03.CompareCharrArrays\bin\Debug\03.CompareCharrArrays.exe
-C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\03.CompareCharrArrays\bin\Debug\03.CompareCharrArrays.pdb
-C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\03.CompareCharrArrays\obj\Debug\03.CompareCharrArrays.csprojResolveAssemblyReference.cache
-C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\03.CompareCharrArrays\obj\Debug\03.CompareCharrArrays.exe
-C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\01.Arrays\03.CompareCharrArrays\obj\Debug\03.CompareCharrArrays.pdb
-C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\CSharp-Part-2-Homework-Assignments\01.Arrays Homework\03.CompareCharrArrays\bin\Debug\03.CompareCharrArrays.exe.config
-C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\CSharp-Part-2-Homework-Assignments\01.Arrays Homework\03.CompareCharrArrays\obj\Debug\03.CompareCharrArrays.exe
-C:\Users\Pete\Google Drive\CSHARP-PART2-TELERIK-ACADEMY\CSharp-Part-2-Homework-Assignments\01.Arrays Homework\03.CompareCharrArrays\obj\Debug\03.CompareCharrArrays.pdb
