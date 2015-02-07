@@ -45,3 +45,4 @@ class Program
         Console.WriteLine("The most popular number in the integer array is {0}, with {1} occurences.", mostPopNumber, largestFrequency);
     }
 }
+ 

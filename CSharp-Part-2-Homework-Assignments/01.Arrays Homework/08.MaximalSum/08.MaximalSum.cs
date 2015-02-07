@@ -41,5 +41,9 @@ class Program
         Console.WriteLine();
         Console.WriteLine("The maximal sum of a subarray is: {0}", maxSum);
         Console.WriteLine();
+        
+
     }
 }
+
+

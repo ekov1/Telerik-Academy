@@ -34,4 +34,4 @@ class Program
         Console.WriteLine(numberOfLongestSequence);
     }
 }
-
+ 
