@@ -15,18 +15,16 @@ class Program
         Array.Copy(arr, copyArr, arr.Length);
         int min;
 
-        for (int i = 0; i < arr.Length; i++)
+        for (int i = 0; i < arr.Length-1; i++)
         {
-            min = i;
-            for (int j = i+1; j < arr.Length; j++)
+            for (int j = i + 1; j < arr.Length; j++)
             {
-                if (arr[j] < arr[min])
+                if (arr[i] > arr[j])
                 {
-                    min = j; 
+                    int b = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = b;
                 }
-                int temp = arr[i];
-                arr[i] = arr[min];
-                arr[min] = temp;
             }
         }
         

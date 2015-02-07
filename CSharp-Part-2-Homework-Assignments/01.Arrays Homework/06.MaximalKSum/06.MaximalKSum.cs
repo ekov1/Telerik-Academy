@@ -14,6 +14,7 @@
             int K = int.Parse(Console.ReadLine());
             Console.WriteLine();
             int[] arr = new int[N];
+            long maxSum = 0;
 
             for (int i = 0; i < arr.Length; i++)
             {
@@ -21,7 +22,10 @@
                 arr[i] = int.Parse(Console.ReadLine());
             }
             Array.Sort(arr);
-            long maxSum = arr[arr.Length - 1] + arr[arr.Length - 2];
+            for (int i = 1; i <= K; i++)
+            {
+                maxSum = arr[arr.Length - i] + maxSum;
+            }
             Console.WriteLine("The maximal possible sum of the number of elements (K = {0}) is {1}.", K, maxSum);
 
 
