@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.QuickSort", "14.QuickSor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.PrimeNumbers", "15.PrimeNumbers\15.PrimeNumbers.csproj", "{B77C81D6-40E7-4A8E-9033-0886324A3273}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.MergeSort", "13.MergeSort\13.MergeSort.csproj", "{FB7749BB-8978-4142-9F9E-2FEF66B29057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.SubsetWithSumS", "16.SubsetWithSumS\16.SubsetWithSumS.csproj", "{F433C23A-5DD0-42EA-9EC2-D14385DABC82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{B77C81D6-40E7-4A8E-9033-0886324A3273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B77C81D6-40E7-4A8E-9033-0886324A3273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B77C81D6-40E7-4A8E-9033-0886324A3273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7749BB-8978-4142-9F9E-2FEF66B29057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7749BB-8978-4142-9F9E-2FEF66B29057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7749BB-8978-4142-9F9E-2FEF66B29057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7749BB-8978-4142-9F9E-2FEF66B29057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F433C23A-5DD0-42EA-9EC2-D14385DABC82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F433C23A-5DD0-42EA-9EC2-D14385DABC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F433C23A-5DD0-42EA-9EC2-D14385DABC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F433C23A-5DD0-42EA-9EC2-D14385DABC82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
