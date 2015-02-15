@@ -18,6 +18,12 @@ class Program
     {
         char[] inputAsString = input.ToCharArray();
         Array.Reverse(inputAsString);
+        int i = 0;
+        while(inputAsString[i] == '0')
+        {
+            inputAsString[i] = '\0';
+            i++;
+        }
         string reversedInput = string.Join("", inputAsString);
 
         return reversedInput;

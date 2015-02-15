@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.NumberAsArray", "08.Numb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.SortingArray", "09.SortingArray\09.SortingArray.csproj", "{3F94E5D8-A07D-4881-950D-E4DE290410D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.Factorial", "10.Factorial\10.Factorial.csproj", "{E808D341-F246-432F-819C-1F5ECBA16616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.AddingPolynomials", "11.AddingPolynomials\11.AddingPolynomials.csproj", "{DC2A6AC1-ADEF-4FE4-B33B-454CA1BB95F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{3F94E5D8-A07D-4881-950D-E4DE290410D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F94E5D8-A07D-4881-950D-E4DE290410D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F94E5D8-A07D-4881-950D-E4DE290410D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E808D341-F246-432F-819C-1F5ECBA16616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E808D341-F246-432F-819C-1F5ECBA16616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E808D341-F246-432F-819C-1F5ECBA16616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E808D341-F246-432F-819C-1F5ECBA16616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC2A6AC1-ADEF-4FE4-B33B-454CA1BB95F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2A6AC1-ADEF-4FE4-B33B-454CA1BB95F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2A6AC1-ADEF-4FE4-B33B-454CA1BB95F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2A6AC1-ADEF-4FE4-B33B-454CA1BB95F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
