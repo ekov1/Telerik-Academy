@@ -1,0 +1,10 @@
+A string is an object of type String whose value is text. Internally, the text is stored as a sequential read-only collection of char objects. 
+The Length property of a string represents the number of char objects it contains, not the number of Unicode characters. 
+We use the StringInfo object to access the individual Unicode code points in a string.
+
+						Important C# string methods:
+			string.Compare(): Compares String objects.Has different overloads.
+			string.Equals(): Determines whether two specified String objects have the same value.
+			string.IndexOf(): Finding a character or substring within given string.
+			string.Substring(): Extract substring from the String object.
+			string.Split(): Splits string object by given separator.
