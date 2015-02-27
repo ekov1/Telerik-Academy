@@ -17,7 +17,7 @@ namespace _14WordDictionary
             Dict.Add("diarrhea", "Flaming liquid shit that makes you scream with pain, clench your teeth, grab hard onto the nearest solid object so that you don't get blown away, and wonder how you're still alive when it's over.");
             Dict.Add("education", "What I have a serious lack of.");
             Dict.Add("Fakebook", "The true meaning of facebook!");
-            Dict.Add("girlfriend ", "Mystical creature whose known powers range from clairvoyancy to being able to bleed for a week without dying. a person to have on your side.");
+            Dict.Add("girlfriend", "Mystical creature whose known powers range from clairvoyancy to being able to bleed for a week without dying. a person to have on your side.");
             Dict.Add("horny", "When a person feels intense sexual desire.");
             Dict.Add("illuminati", "Elite masters of deception who want to control your mind, soul, and your body, and rule the entire world.");
             Dict.Add("jailbait", "An attractive person, usually a female, below the legal age of consent; so named because the penalty for adult sexual intercourse with such a person is usually imprisonment.");
@@ -46,7 +46,6 @@ namespace _14WordDictionary
                 {
                     Console.WriteLine(key.Key);
                 }
-
 
                 Console.Write("\n\nWord: ");
                 string input = Console.ReadLine();
