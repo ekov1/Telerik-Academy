@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.KukataIsDancing", "ConsoleApplication1\03.KukataIsDancing.csproj", "{A165F36E-22DF-43CB-AFD0-38686B8F37F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.FTML", "04.FTML\04.FTML.csproj", "{A7221B4C-AE19-4A4D-904F-84E203FBBAA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Laser", "03.Laser\03.Laser.csproj", "{9C7239FD-195E-4800-9E71-EC4498F85502}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A165F36E-22DF-43CB-AFD0-38686B8F37F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A165F36E-22DF-43CB-AFD0-38686B8F37F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A165F36E-22DF-43CB-AFD0-38686B8F37F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A165F36E-22DF-43CB-AFD0-38686B8F37F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7221B4C-AE19-4A4D-904F-84E203FBBAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7221B4C-AE19-4A4D-904F-84E203FBBAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7221B4C-AE19-4A4D-904F-84E203FBBAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7221B4C-AE19-4A4D-904F-84E203FBBAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7239FD-195E-4800-9E71-EC4498F85502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7239FD-195E-4800-9E71-EC4498F85502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7239FD-195E-4800-9E71-EC4498F85502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7239FD-195E-4800-9E71-EC4498F85502}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
