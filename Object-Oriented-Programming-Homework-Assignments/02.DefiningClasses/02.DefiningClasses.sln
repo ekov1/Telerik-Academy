@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.GenericClasses-tasks5to7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Points-tasks1to4", "01.Points-tasks1to4\01.Points-tasks1to4.csproj", "{D26CCD67-FE80-4CFC-A098-84C8E83B6B51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Matrix-tasks8to10", "08.Matrix-tasks8to11\08.Matrix-tasks8to10.csproj", "{FC899A4A-970A-4D3D-8AC3-9AC8E83F1F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.Version", "11.Version\11.Version.csproj", "{05A8B778-0CFE-492B-B77D-E0911FFF9F7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D26CCD67-FE80-4CFC-A098-84C8E83B6B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D26CCD67-FE80-4CFC-A098-84C8E83B6B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D26CCD67-FE80-4CFC-A098-84C8E83B6B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC899A4A-970A-4D3D-8AC3-9AC8E83F1F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC899A4A-970A-4D3D-8AC3-9AC8E83F1F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC899A4A-970A-4D3D-8AC3-9AC8E83F1F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC899A4A-970A-4D3D-8AC3-9AC8E83F1F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A8B778-0CFE-492B-B77D-E0911FFF9F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A8B778-0CFE-492B-B77D-E0911FFF9F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A8B778-0CFE-492B-B77D-E0911FFF9F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A8B778-0CFE-492B-B77D-E0911FFF9F7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
