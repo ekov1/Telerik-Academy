@@ -2,12 +2,18 @@
 
 namespace _03.AnimalHierarchy
 {
-    /// <summary>
-    /// TODO: FINISH
-    /// </summary>
     public abstract class Cat : Animal, ISound
     {
-        //TODO
+        public Cat(int age, string name, sex _sex)
+            :base(age, name, _sex)
+        {
+        }
+
+        public Cat(int age, string name)
+            : base(age, name)
+        {
+        }
+
 
         public void MakeSound()
         {

@@ -11,10 +11,14 @@
         private string name;
         private sex _sex;
 
-        public Animal(int age, string name, sex _sex)
+        public Animal(int age, string name)
         {
             this.Age = age;
             this.Name = name;
+        }
+
+        public Animal(int age, string name, sex _sex) : this(age, name)
+        {
             this.Sex = _sex;
         }
 
@@ -33,7 +37,7 @@
         public sex Sex
         {
             get { return _sex; }
-            private set { _sex = value; }
+            protected set { _sex = value; }
         }
 
 
