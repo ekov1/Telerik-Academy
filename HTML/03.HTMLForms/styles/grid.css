@@ -1,0 +1,106 @@
+table {
+	text-align: left;
+	font-family: "Lucida Sans Unicode", sans-serif;
+	font-size: 12px;
+	border-spacing: 0px;
+
+}
+
+td {
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-right: 1px solid;
+	border-right-color: #e7e9eb;
+	border-bottom: 1px solid;
+	border-bottom-color: #e7e9eb;
+	border-left: 1px solid;
+	border-left-color: #e7e9eb
+}
+
+#table-header {
+	background-color: #e7e9eb;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height:20px;
+}
+
+.category {
+	text-align: left;
+	background: url("../images/topgradient.png");
+	background-repeat: repeat-x;
+	border-spacing: 0px;
+	border-top: 1px solid;
+	border-top-color: gray;
+	border-right: 1px solid;
+	border-right-color: gray;
+	border-bottom: 1px solid;
+	border-bottom-color: gray;
+	border-left: 1px solid;
+	border-left-color: gray
+}
+
+.filter-box {
+	background-color: #dfe3e8;
+	padding-top: 6px;
+	border-bottom: 1px solid;
+	border-bottom-color: gray;
+	border-left: 1px solid;
+	border-left-color: gray;
+	border-right: 1px solid;
+	border-right-color: gray;
+	vertical-align: middle;
+}
+
+#check {
+	vertical-align: middle;
+}
+
+#product-id {
+	width: 40px;
+}
+
+#product-name {
+	width: 110px;
+}
+
+#unit-price {
+	width: 60px;
+}
+
+#quantity, #units-stock {
+	width: 70px;
+}
+
+.sort-button {
+	background-position: center;
+	background: url("../images/sortbutton.png") no-repeat scroll 0 0 transparent;
+	border: none;
+	cursor: pointer;
+	height: 22px;
+	width: 22px;
+	vertical-align: middle;
+	padding-bottom: 25px;
+}
+
+.pages {
+	background: none;
+	border: none;
+}
+
+.footer-pages {
+	padding-top: 2px;
+	background: url("../images/topgradient.png");
+	background-repeat: repeat-x;
+	border: 0px solid;	
+	border-top: 1px solid gray;
+	border-bottom-left-radius: 10px;
+}
+
+#footer-text {
+	text-align: right;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 10px
+}
+
