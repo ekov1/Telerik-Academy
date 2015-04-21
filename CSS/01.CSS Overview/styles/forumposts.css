@@ -1,0 +1,41 @@
+body {
+	background-color: #A9A9A9;
+	font-size: 16px;
+}
+
+header {
+	font-size: 1.50em;
+	color: #FFF;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
+
+article header, article footer {
+	text-align: left;
+}
+
+header a {
+	color: #FFF;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.current {
+	background-color: #D3D3D3;
+}
+
+.last {
+	text-decoration: underline;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+

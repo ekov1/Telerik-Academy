@@ -1,0 +1,44 @@
+body {
+	background-color: #595959;
+	color: #B6B2A7;
+	font-family: "Arial", sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+header {
+	font-size: 1.25em;
+	color: #7A848E;
+}
+
+th {
+	color: white;
+	font-style: italic;
+	text-align: left;
+	vertical-align: top;
+	font-size: 0.80em;
+}
+
+td {
+	padding-left: 30px;
+	font-size: 0.75em;
+}
+
+a {
+	text-decoration: none;
+	color: #DCCC7E;
+}
+
+#name:before {
+	content: url("https://www.tidetimes.org.uk/_gfx/dot.png");
+	margin-right: 3px;
+}
+
+#support {
+	color: red;
+}
+
+#status {
+	font-weight: bold;
+	color: #E36A24;
+}

@@ -1,0 +1,49 @@
+body {
+	font-family: "Segoe UI" sans-serif;
+	font-size: 12px;
+}
+
+table {
+	width: 30%;
+	border-spacing: 0px;
+	margin: -10px;
+	border-bottom: 1px solid gray;
+}
+
+tr:nth-child(2n+1) {
+	background-color: #FFF;
+}
+
+tr:nth-child(2n) {
+	background-color: #ECECD8;
+}
+
+td, th {
+	padding: 4px;
+	padding-right: 10px;
+	border-right: 1px solid gray;
+}
+
+th {
+	font-weight: normal;
+	color: #FFF;
+	background: -webkit-linear-gradient(top, #8fc800 0%,#709600 97%,#709600 97%,#8fc800 100%);
+	text-align: left;
+	border-bottom: 1px solid gray;
+}
+
+.Ger:before {
+	content: url("../germanyflag.png");
+	margin-right: 10px;
+}
+
+.Mex:before {
+	content: url("../mexicoflag.png");
+	margin-right: 10px;
+}
+
+.UK:before {
+	content: url("../ukflag.png");
+	margin-right: 10px;
+}
+
