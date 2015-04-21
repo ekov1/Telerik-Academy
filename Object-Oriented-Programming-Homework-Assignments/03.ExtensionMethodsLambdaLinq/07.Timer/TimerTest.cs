@@ -6,7 +6,7 @@ namespace _07.Timer
     {
         static void Main()
         {
-            var timer = new Timer(1);
+            var timer = new Timer(9);
 
             timer.Methods = Tick;
             timer.Methods += Tock;

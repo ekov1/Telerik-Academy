@@ -23,7 +23,7 @@ namespace _07.Timer
             while (true)
             {
                 this.Methods();
-                Thread.Sleep(this.Frequency * 1000);
+                Thread.Sleep(this.Frequency);
             }
         }
     }
