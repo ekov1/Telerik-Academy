@@ -1,0 +1,62 @@
+#main-container {
+	font-family: "Arial";
+	font-size: 12px;
+	background-color: #EEEEEE;
+	border-radius: 5px;
+	padding: 10px;
+	width: 400px;
+}
+
+header {
+	font-size: 1.4em;
+}
+
+.ad {
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid gray;
+	padding: 15px;
+	padding-left: 30px;
+	width: 350px;
+	height: 100px;
+	text-align: right;
+}
+
+section img {
+	float: left;
+	border: 1px solid gray;
+	margin-left: -10px;
+}
+
+section p {
+	vertical-align: top;
+	text-align: left;
+	margin-left: 150px;
+	padding-bottom: 10px;
+	margin-top: 0;
+}
+
+button {
+	color: #FFF;
+	background: url("../images/btn.png") no-repeat;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	font-size: 1em;
+}
+
+button.listen {
+	width: 70px;
+	height: 25px;
+}
+
+button.add {
+	width: 60px;
+	height: 25px;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+
