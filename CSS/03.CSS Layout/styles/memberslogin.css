@@ -1,0 +1,78 @@
+body {
+	width: 660px;
+	margin: 0
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.loginheader {
+	background: url(../images/headergrad.png) repeat-x;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 0.9em;
+	padding-top: 7px;
+	padding-left: 10px;
+	height: 5em;
+	margin-bottom: -45px
+}
+
+.loginheader * {
+	vertical-align: middle;
+	padding-right: 10px;
+	margin-right: 15px;
+}
+
+#login {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #FFF;
+}
+
+input[type=text] {
+	padding-left: 8px;
+}
+
+section article header h1{
+	font-family: "Times New Roman";
+	color: #FBDA19;
+	padding-top: 15px;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+section {
+	background-color: #3B3B3B;
+	font-family: "Calibri";
+	color: #9E9E9E;
+	padding-left: 10px;
+	padding-right: 65px;
+	padding-bottom: 0;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+p {
+	margin-top: -15px;
+}
+
+button {
+	background-image: url("../images/gobtn.png");
+	width:56px;
+	height:28px;
+	color: #FFF; 
+	font-size: 0.9em;
+	background-size: cover;
+	border: 1px solid #FFF;
+	border-radius: 20px;
+	margin-left: -5px;
+}
+
+.strong {
+	color: #FFF;
+}
