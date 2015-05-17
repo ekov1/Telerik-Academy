@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script src="scripts/mainjs.js"></script>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="wrapper">
+<fieldset>
+    <legend>Odd or Even</legend>
+    <form onsubmit="return false">
+        <label for="oddInput">Number: </label><input type="text" id="oddInput"/>
+        <input type="submit" value="Check" onclick="isOdd()"/>
+        <label for="oddCheckResult">Result: </label><input type="text" value="Result" id="oddCheckResult" disabled/>
+    </form>
+</fieldset>
+
+<fieldset>
+    <legend>Divisible by 5 and 7</legend>
+    <form onsubmit="return false">
+        <label for="divisibleInput">Number: </label><input type="text" id="divisibleInput"/>
+        <input type="submit" value="Check" onclick="divisibleBy5And7()"/>
+        <label for="divisibleResult">Result: </label><input type="text" value="Result" id="divisibleResult" disabled/>
+    </form>
+</fieldset>
+
+<fieldset>
+    <legend>Calculate rectangle area</legend>
+    <form onsubmit="return false">
+        <label for="areaInput1">Width: </label><input type="text" id="areaInput1"/>
+        <label for="areaInput2">Height: </label><input type="text" id="areaInput2"/>
+        <input type="submit" value="Check" onclick="calcRectArea()"/>
+        <label for="areaResult">Result: </label><input type="text" value="Result" id="areaResult" disabled/>
+    </form>
+</fieldset>
+
+<fieldset>
+    <legend>Third digit 7</legend>
+    <form onsubmit="return false">
+        <label for="digitInput">Number: </label><input type="text" id="digitInput"/>
+        <input type="submit" value="Check" onclick="thirdDigitIs7()"/>
+        <label for="digitResult">Result: </label><input type="text" value="Result" id="digitResult" disabled/>
+    </form>
+</fieldset>
+
+<fieldset>
+    <legend>Third bit</legend>
+    <form onsubmit="return false">
+        <label for="bitInput">Number: </label><input type="text" id="bitInput"/>
+        <input type="submit" value="Check" onclick="thirdBit()"/>
+        <label for="bitResult">Result: </label><input type="text" value="Result" id="bitResult" disabled/>
+    </form>
+</fieldset>
+
+<fieldset>
+    <legend>Point in a circle(0, 0; R=5)</legend>
+    <form onsubmit="return false">
+        <label for="pointInput1">X: </label><input type="text" id="pointInput1"/>
+        <label for="pointInput2">Y: </label><input type="text" id="pointInput2"/>
+        <input type="submit" value="Check" onclick="isInCircle()"/>
+        <label for="pointResult">Result: </label><input type="text" value="Result" id="pointResult" disabled/>
+    </form>
+</fieldset>
+
+    <fieldset>
+        <legend>Number is prime</legend>
+        <form onsubmit="return false">
+            <label for="primeInput">Number: </label><input type="text" id="primeInput"/>
+            <input type="submit" value="Check" onclick="isPrime()"/>
+            <label for="primeResult">Result: </label><input type="text" value="Result" id="primeResult" disabled/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Trapezoid area</legend>
+        <form onsubmit="return false">
+            <label for="trapArea1">a: </label><input type="text" id="trapArea1"/>
+            <label for="trapArea2">b: </label><input type="text" id="trapArea2"/>
+            <label for="trapArea3">h: </label><input type="text" id="trapArea3"/>
+            <input type="submit" value="Check" onclick="trapezoidArea()"/>
+            <label for="trapResult">Result: </label><input type="text" value="Result" id="trapResult" disabled/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Point in a circle(1, 1; R=3) and outside rectangle</legend>
+        <form onsubmit="return false">
+            <label for="ptInput1">X: </label><input type="text" id="ptInput1"/>
+            <label for="ptInput2">Y: </label><input type="text" id="ptInput2"/>
+            <input type="submit" value="Check" onclick="isInCircleOutRect()"/>
+            <label for="ptResult">Result: </label><input type="text" value="Result" id="ptResult" disabled/>
+        </form>
+    </fieldset>
+</div>
+</body>
+</html>
