@@ -78,6 +78,8 @@ function SortThreeNumbers(a, b, c) {
     console.log(result);
 }
 
+
+
 //Task5 Digit as word
 
 function DigitAsWord(digit) {
@@ -219,7 +221,7 @@ console.log('Task 4 results: ');
 LargestOfThreeNumbers(5, 16, 3);
 console.log('-------------');
 console.log('Task 5 results: ');
-DigitAsWord(-8);
+DigitAsWord(6);
 console.log('-------------');
 console.log('Task 6 results: ');
 QuadraticEquation(2, 5, -3);

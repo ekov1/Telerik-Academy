@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script src="scripts/Numbers.js"></script>
+    <script src="scripts/NumbersNotDivisible.js"></script>
+    <script src="scripts/MinMaxSequence.js"></script>
+    <script src="scripts/LexicographicallySmallest.js"></script>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<header>
+    <h1>Javascript displayed below</h1>
+    <br/>
+    <h2>Open console (F12) to preview output!</h2>
+</header>
+    <div id="jscript">
+        <h3>Numbers</h3>
+        <p>
+            function PrintNumbers(n) {
+            var i;
+            for (i = 1; i <= n; i+=1) {
+            console.log(i);
+            }
+            }
+        </p>
+        <h3>Numbers Not Divisible</h3>
+        <p>
+            function PrintNumbersNotDivisible(n) {
+            var i;
+            for (i = 1; i <= n; i+=1) {
+            if(!(i%3 == 0 && i%7 == 0))
+            console.log(i);
+            else
+            console.log('number omitted');
+            }
+            }
+        </p>
+        <h3>Min/Max Sequence</h3>
+        <p>
+            function MinMaxSequence() {
+            var numbers = [24, 4, -132, 3, 1, 420, -6, 4, 2, 17, 12, 6, 3,
+            -1, 4, 6, 1, 5, 3, 8, 7, 2, 9, -4, -3, 14, -11, 409, 5, 8, 55],
+            min = Number.MAX_VALUE,
+            max = Number.MIN_VALUE,
+            i;
+
+            for (i = 0; i < numbers.length; i+=1) {
+            if(min > numbers[i]) {
+            min = numbers[i];
+            }
+            if(max < numbers[i]) {
+            max = numbers[i];
+            }
+            }
+
+            console.log('Min value: ' + min + ' Max value: ' + max)
+            }
+        </p>
+        <h3>Lexicographical Operations</h3>
+        <p>
+            var doc = document,
+            win = window,
+            nav = navigator;
+
+            function LexicographicalOperations(doc, win, nav) {
+            console.log('Document smallest property: ' + FindSmallest(doc) + 'biggest property: ' + FindBiggest(doc));
+            console.log('Window smallest property: ' + FindSmallest(win) + 'biggest property: ' + FindBiggest(win));
+            console.log('Navigator smallest property: ' + FindSmallest(nav) + 'biggest property: ' + FindBiggest(nav));
+            }
+
+            function FindSmallest(object) {
+            var compareParam = 'aaaaa';
+            for(var property in object) {
+            if(compareParam > property)
+            compareParam = property;
+            }
+
+            return compareParam;
+            }
+
+            function FindBiggest(object) {
+            var compareParam = 'zzzzz';
+            for(var property in object) {
+            if(compareParam < property)
+            compareParam = property;
+            }
+
+            return compareParam;
+            }
+        </p>
+        <h2>Function calls:</h2>
+        <p>
+            PrintNumbers(14)
+            <br/>PrintNumbersNotDivisible(43)
+            <br/>MinMaxSequence()
+            <br/>LexicographicalOperations(document, window, navigator)</p>
+    </div>
+</body>
+</html>
