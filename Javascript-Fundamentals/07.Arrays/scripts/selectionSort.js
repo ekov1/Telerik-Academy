@@ -3,7 +3,8 @@
 //Use the selection sort algorithm: Find the smallest element, move it at the first position,
 //find the smallest from the rest, move it at the second position, etc.
 
-var len = arr.length,
+var input = [24, 4, -132, 3, 1, 420, -6, 4, 2, 17, 12, 6];
+var len = input.length,
     sortedArr = [],
     crnt = 0;
 
@@ -34,7 +35,5 @@ function sort(arr) {
     crnt++;
     arr[smallestElement] = null;
 }
-
-var input = [24, 4, -132, 3, 1, 420, -6, 4, 2, 17, 12, 6];
 
 selectionSort(input);
