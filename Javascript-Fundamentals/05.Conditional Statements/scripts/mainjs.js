@@ -1,6 +1,6 @@
 //Task1 Exchange if greater
 
-function ExchangeIfGreater(a, b) {
+function 3xchangeIfGreater(a, b) {
     if (a > b) {
         var temp = a;
         a = b;
@@ -12,7 +12,7 @@ function ExchangeIfGreater(a, b) {
 
 //Task2 Multiplication sign
 
-function MultiplicationSign(a, b, c) {
+function multiplicationSign(a, b, c) {
     if(a===0 || b===0 || c===0) {
         console.log("Resulting sign is: 0");
         return;
@@ -31,7 +31,7 @@ function MultiplicationSign(a, b, c) {
 
 //Task3 The largest of three
 
-function LargestOfThreeNumbers(a, b, c) {
+function largestOfThreeNumbers(a, b, c) {
     if (a > b) {
         if (a > c) {
             console.log(a);
@@ -49,7 +49,7 @@ function LargestOfThreeNumbers(a, b, c) {
 
 //Task4 Sort three numbers
 
-function SortThreeNumbers(a, b, c) {
+function sortThreeNumbers(a, b, c) {
     var result, temp;
 
     if (a <= b) {
@@ -82,7 +82,7 @@ function SortThreeNumbers(a, b, c) {
 
 //Task5 Digit as word
 
-function DigitAsWord(digit) {
+function digitAsWord(digit) {
     var result;
     switch (Number(digit)) {
         case 1: result = 'one'; break;
@@ -102,7 +102,7 @@ function DigitAsWord(digit) {
 
 //Task6 Quadratic equation
 
-function QuadraticEquation(a, b, c) {
+function quadraticEquation(a, b, c) {
     var D, x1, x2;
     D = b*b - 4*a*c;
 
@@ -122,7 +122,7 @@ function QuadraticEquation(a, b, c) {
 
 //Task 7 Largest of five numbers
 
-function LargestOfFiveNumbers(a, b, c, d, e) {
+function largestOfFiveNumbers(a, b, c, d, e) {
     var result;
 
     if(a > b) {
@@ -166,7 +166,7 @@ function LargestOfFiveNumbers(a, b, c, d, e) {
 
 //Task 8 Number as word
 
-function NumberAsWord(num) {
+function numberAsWord(num) {
     var ones = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     var tenToTwenty = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen',
         'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
@@ -209,25 +209,25 @@ function NumberAsWord(num) {
 
 //Function calls
 console.log('Task 1 results: ');
-ExchangeIfGreater(5.5, 4.5);
+exchangeIfGreater(5.5, 4.5);
 console.log('-------------');
 console.log('Task 2 results: ');
-MultiplicationSign(-1, -0.5, -5.1);
+multiplicationSign(-1, -0.5, -5.1);
 console.log('-------------');
 console.log('Task 3 results: ');
-SortThreeNumbers(7, -10, 3);
+sortThreeNumbers(7, -10, 3);
 console.log('-------------');
 console.log('Task 4 results: ');
-LargestOfThreeNumbers(5, 16, 3);
+largestOfThreeNumbers(5, 16, 3);
 console.log('-------------');
 console.log('Task 5 results: ');
-DigitAsWord(6);
+digitAsWord(6);
 console.log('-------------');
 console.log('Task 6 results: ');
-QuadraticEquation(2, 5, -3);
+quadraticEquation(2, 5, -3);
 console.log('-------------');
 console.log('Task 7 results: ');
-LargestOfFiveNumbers(3, 5, 7, -10, 0.5);
+largestOfFiveNumbers(3, 5, 7, -10, 0.5);
 console.log('-------------');
 console.log('Task 8 results: ');
-NumberAsWord(762);
+numberAsWord(762);

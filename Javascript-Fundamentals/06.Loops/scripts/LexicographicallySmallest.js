@@ -4,13 +4,13 @@ var doc = document,
     win = window,
     nav = navigator;
 
-function LexicographicalOperations(doc, win, nav) {
-    console.log('Document smallest property: ' + FindSmallest(doc) + ' || biggest property: ' + FindBiggest(doc));
-    console.log('Window smallest property: ' + FindSmallest(win) + ' || biggest property: ' + FindBiggest(win));
-    console.log('Navigator smallest property: ' + FindSmallest(nav) + ' || biggest property: ' + FindBiggest(nav));
+function lexicographicalOperations(doc, win, nav) {
+    console.log('Document smallest property: ' + findSmallest(doc) + ' || biggest property: ' + findBiggest(doc));
+    console.log('Window smallest property: ' + findSmallest(win) + ' || biggest property: ' + findBiggest(win));
+    console.log('Navigator smallest property: ' + findSmallest(nav) + ' || biggest property: ' + findBiggest(nav));
 }
 
-function FindSmallest(object) {
+function findSmallest(object) {
     var compareParam = 'aaa';
     for(var property in object) {
         if(compareParam > property)
@@ -20,7 +20,7 @@ function FindSmallest(object) {
     return compareParam !== 'aaa' ? compareParam : '';
 }
 
-function FindBiggest(object) {
+function findBiggest(object) {
     var compareParam = 'zzz';
     for(var property in object) {
         if(compareParam < property)
@@ -30,4 +30,4 @@ function FindBiggest(object) {
     return compareParam !== 'zzz' ? compareParam : '';
 }
 
-LexicographicalOperations(doc, win, nav);
+lexicographicalOperations(doc, win, nav);
