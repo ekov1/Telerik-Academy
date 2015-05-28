@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script src="scripts/increaseArrayMember.js"></script>
+    <script src="scripts/lexicographicComparer.js"></script>
+    <script src="scripts/maxIncreasingSequence.js"></script>
+    <script src="scripts/maxSequence.js"></script>
+    <script src="scripts/selectionSort.js"></script>
+    <script src="scripts/frequentNumber.js"></script>
+    <script src="scripts/binarySearch.js"></script>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<header>
+    <h1>Javascript displayed below</h1>
+    <br/>
+    <h2>Open console (F12) to preview output!</h2>
+</header>
+    <div id="jscript">
+        <h3>Increase array members</h3>
+        <p>
+            function increasingMembers() {
+    var size = 20,
+        arr = [size];
+
+    for (var i = 0; i < size; i++) {
+        arr[i] = i*5;
+    }
+
+    console.log('Resulting array: ' + arr.join(', '));
+}
+        </p>
+        <h3>Lexicographical comparison</h3>
+        <p>
+        	function compare(a,b){
+    var length = Math.min(a.length, b.length);
+
+    for (var i = 0; i < length; i+=1) {
+        if(a[i]<b[i]){
+            console.log('Resulting char array: ' + a);
+            return;
+        }
+        else if(a[i]>b[i]){
+            console.log('Resulting char array: ' + b);
+            return;
+        }
+    }
+    console.log('Resulting char array: ' + (a.length < b.length) ? a : b);
+}
+        </p>
+        <h3>Maximal sequence</h3>
+        <p>
+            function maxSequence(arr) {
+    var count = 1,
+        bestCount = 0,
+        element;
+
+    for (var i = 0; i < arr.length-1; i+=1) {
+
+        if(arr[i] === arr[i+1]) {
+            count++;
+        } else {
+            count = 1;
+        }
+
+        if(count > bestCount) {
+            bestCount = count;
+            element   = arr[i];
+        }
+
+    }
+
+    console.log('Longest sequence of equal elements: ' + element + ' with ' + bestCount + ' consequent occurrences');
+}
+        </p>
+        <h3>Maximal increasing sequence</h3>
+        <p>
+            var input = [3, 2, 4, 1, 3, 4, 5, 77, 2, 2, 4];
+
+function maxIncreasingSequence(arr) {
+    var elementPos = 0,
+        count = 1,
+        bestCount = 0;
+
+    for (var i = 0; i < arr.length-1; i+=1) {
+
+        if(arr[i] < arr[i+1]) {
+            count++;
+        } else {
+            count = 1;
+        }
+
+        if(count > bestCount) {
+            bestCount = count;
+            elementPos = i+2;
+        }
+
+    }
+
+    var result = [];
+
+    for (i = bestCount; i > 0; i -= 1) {
+        result.push(arr[elementPos-i]);
+    }
+    console.log('Longest increasing sequence of numbers is: ' + result.join(', '));
+}
+        </p>
+        <h3>Selection Sort</h3>
+        <p>
+			var input = [24, 4, -132, 3, 1, 420, -6, 4, 2, 17, 12, 6];
+var len = input.length,
+    sortedArr = [],
+    crnt = 0;
+
+function selectionSort(arr) {
+
+    console.log(arr.join(', '));
+
+    for (var i = 0; i < len; i+=1) {
+        sort(arr);
+    }
+
+    console.log(sortedArr.join(', '));
+}
+
+function sort(arr) {
+    var smallest = Number.MAX_VALUE,
+    smallestElement;
+
+    for (var j = 0; j < len; j+=1) {
+        if(arr[j] == null) continue;
+        if(smallest > arr[j]) {
+            smallest = arr[j];
+            smallestElement = j;
+        }
+    }
+
+    sortedArr[crnt] = arr[smallestElement];
+    crnt++;
+    arr[smallestElement] = null;
+}
+        </p>
+        <h3>Most frequent number</h3>
+        <p>
+        var input = [4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3];
+
+function mostFrequentNumber(arr) {
+    var currentFreq = 0,
+        largestFreq = 0,
+        num = 0,
+        mostPopularNum = 0,
+        len = arr.length;
+
+    arr.sort(function(a, b) {
+        return a - b;
+    });
+
+    for (var i = 0; i < len-1; i += 1) {
+        if (num == arr[i] || i == 0) {
+            num = arr[i];
+            ++currentFreq;
+        }
+
+        if (currentFreq > largestFreq) {
+            largestFreq = currentFreq;
+            mostPopularNum = arr[i];
+        }
+        if (len - 1 > i && arr[i + 1] != num) {
+            num = arr[i + 1];
+            currentFreq = 0;
+        }
+    }
+
+    console.log('The most popular number in the array is ' + mostPopularNum + ' with ' + largestFreq + ' occurrences.')
+}
+        </p>
+        <h3>Binary search</h3>
+        <p>var input = [24, 4, -132, 3, 1, 420, -6, 4, 2, 17, 12, 6, 3, -1, 4,
+    6, 1, 5, 3, 8, 7, 2, 9, -4, -3, 14, -11, 409, 5, 8, 55],
+    target = 9;
+
+function binarySearch(arr, key) {
+    var len = arr.length,
+        iMax = len - 1,
+        iMin = 0,
+        iMid = len / 2,
+        keyFound = false;
+
+    arr.sort(function(a, b) {
+        return a - b;
+    });
+
+    while(iMax >= iMin) {
+        iMid = ((iMin + iMax) / 2) | 0;
+        if (arr[iMid] == key)
+        {
+            console.log('Target = ' + key + ' found at index ' + iMid);
+            keyFound = true;
+            break;
+        }
+        else if (arr[iMid] < key)
+        {
+            iMin = iMid + 1;
+        }
+        else
+        {
+            iMax = iMid - 1;
+        }
+    }
+
+    if (!keyFound)
+    {
+        console.log('Target = ' + key + ' not found! Lo siento mucho, se?or!');
+    }
+}
+</p>
+        <h2>Function calls:</h2>
+        <p>
+            
+            <br/>increasingMembers();
+            <br/>compare('foools', 'toools');
+            <br/>var input = [4, 1, 1, 1, 1, 4, 2, 3, 4, 4, 4, 4, 4, 1, 2, 2, 2, 4, 9, 3]; maxSequence(input);
+            <br/>var input = [3, 2, 4, 1, 3, 4, 5, 77, 2, 2, 4]; maxIncreasingSequence(input);
+            <br/>var input = [24, 4, -132, 3, 1, 420, -6, 4, 2, 17, 12, 6]; selectionSort(input);
+            <br/>var input = [4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3]; mostFrequentNumber(input);
+            <br/>var input = [24, 4, -132, 3, 1, 420, -6, 4, 2, 17, 12, 6, 3, -1, 4,
+    6, 1, 5, 3, 8, 7, 2, 9, -4, -3, 14, -11, 409, 5, 8, 55],
+    target = 9; binarySearch(input, target);
+            </p>
+    </div>
+</body>
+</html>
