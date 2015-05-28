@@ -1,6 +1,6 @@
 //Task1 Exchange if greater
 
-function 3xchangeIfGreater(a, b) {
+function exchangeIfGreater(a, b) {
     if (a > b) {
         var temp = a;
         a = b;

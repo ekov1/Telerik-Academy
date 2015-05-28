@@ -2,9 +2,18 @@
 
 function printNumbers(n) {
     var i;
-    for (i = 1; i <= n; i+=1) {
-        console.log(i);
-    }
+
+    if(i>=1) {
+
+    	for (i = 1; i <= n; i+=1) {
+        	console.log(i);
+    	}
+	} else {
+
+		for (i = 1; i >= n; i-=1) {
+			console.log(i);
+		}
+	}
 }
 
 printNumbers(14);
