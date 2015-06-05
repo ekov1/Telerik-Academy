@@ -30,4 +30,3 @@ Array.prototype.remove = function (element) {
         }
     }
 };
-

@@ -11,9 +11,9 @@ function personConstructor(fname, lname, age) {
 }
 
 var gosho = personConstructor('Gosho', 'Petrov', 32),
-    ivan = personConstructor('Bay', 'Ivan', 81),
+    ivan = personConstructor('Bay', 'Ivan', 21),
     pesho = personConstructor('Pesho', 'Picha', 21),
-    doncho = personConstructor('Doncho', 'Minkov', 26),
+    doncho = personConstructor('Doncho', 'Minkov', 22),
     pesho2 = personConstructor('Pesho', 'Blastera', 22),
     pesho3 = personConstructor('Pesho', 'Petrov', 32);
 
@@ -23,20 +23,34 @@ groupPeopleTest();
 
 function groupPeopleTest() {
     var groupedByFname = group(people, 'firstname'),
-        groupedByLname = group(people, 'lastname');
+        groupedByLname = group(people, 'lastname'),
+        groupedByAge = group(people, 'age');
+
+    printGroup(groupedByFname, 'firstname');
+    printGroup(groupedByLname, 'lastname');
+    printGroup(groupedByAge, 'age');
 }
 
 function group(people, prop) {
-    var result = {};
+    var result = [],
+        currentProp;
 
-    if (prop === 'firstname') {
+    for (var index in people) {
+        currentProp = people[index][prop];
 
-    }
-    if (prop === 'lastname') {
-
-    }
-    if (prop === 'age') {
-
+        result[currentProp] = result[currentProp] || [];
+        result[currentProp].push(people[index]);
     }
 
+    return result;
+}
+
+function printGroup(group, prop) {
+    console.log(prop);
+
+    for (var key in group) {
+        console.log(group[key]);
+        console.log('------');
+    }
+    console.log();
 }
