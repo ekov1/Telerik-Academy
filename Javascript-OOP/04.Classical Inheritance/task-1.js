@@ -18,59 +18,66 @@
 function solve() {
 	var Person = (function () {
 		function Person(firstname, lastname, age) {
-			var validate = /[A-Za-z]+/i;
-			if (firstname && (firstname.length > 2 && firstname.length < 21)) {
-				if (validate.test(firstname)) {
-					this.firstname = firstname;
-				} else {
-					throw new Error('The man is lying about their name.');
-				}
-			} else {
-				throw new Error('The man has no name.');
-			}
-
-			if (lastname && (lastname.length > 2 && lastname.length < 21)) {
-				if (validate.test(lastname)) {
-					this.lastname = lastname;
-				} else {
-					throw new Error('The man is lying about their name.');
-				}
-			} else {
-				throw new Error('The man has no last name.');
-			}
-
-			if (+age > -1 && +age < 151) {
-				this.age = age;
-			} else {
-				throw new Error('The man is lying about their age.');
-			}
-
-			Object.defineProperty(this, 'fullname', {
-				get: function() { return this.firstname + ' ' + this.lastname; },
-				set: function(fname) {
-					fname = fname.split(' ');
-					this.firstname = fname[0];
-					this.lastname  = fname[1];
-					return this;
-					}
-			});
-			/* The following code only acts as a function, unlike .defineProperty which can be both a function and
-			a property due to its duality
-			Person.prototype.fullname = function(fname) {
-				if (fname) {
-					var name = fname.split(' ');
-					this.firstname = name[0];
-					this.lastname = name[1];
-					return this;
-				} else {
-					return this.firstname + ' ' + this.lastname;
-				}
-			};
-			*/
-			Person.prototype.introduce = function() {
-				return 'Hello! My name is ' + this.fullname + ' and I am ' + this.age + '-years-old';
-			};
+			this.firstname = firstname;
+			this.lastname = lastname;
+			this.age = age;
 		}
+
+		var validate = /[A-Za-z]+/i;
+
+		Object.defineProperty(Person.prototype, 'firstname', {
+			get: function () { return this._firstname },
+			set: function (firstname) {
+				if (firstname && (firstname.length > 2 && firstname.length < 21)) {
+					if (validate.test(firstname)) {
+						this._firstname = firstname;
+					} else {
+						throw new Error('The man is lying about their name.');
+					}
+				} else {
+					throw new Error('The man has no name.');
+				}
+			}
+		});
+
+		Object.defineProperty(Person.prototype, 'lastname', {
+			get: function () { return this._lastname },
+			set: function (lastname) {
+				if (lastname && (lastname.length > 2 && lastname.length < 21)) {
+					if (validate.test(lastname)) {
+						this._lastname = lastname;
+					} else {
+						throw new Error('The man is lying about their name.');
+					}
+				} else {
+					throw new Error('The man has no name.');
+				}
+			}
+		});
+
+		Object.defineProperty(Person.prototype, 'age', {
+			get: function () { return this._age; },
+			set: function (age) {
+				if (+age > -1 && +age < 151) {
+					this._age = age;
+				} else {
+					throw new Error('The man is lying about their age.');
+				}
+			}
+		});
+
+		Object.defineProperty(Person.prototype, 'fullname', {
+			get: function() { return this.firstname + ' ' + this.lastname; },
+			set: function(fname) {
+				fname = fname.split(' ');
+				this.firstname = fname[0];
+				this.lastname  = fname[1];
+			}
+		});
+
+		Person.prototype.introduce = function() {
+			return 'Hello! My name is ' + this.fullname + ' and I am ' + this.age + '-years-old';
+		};
 		
 		return Person;
 	} ());
