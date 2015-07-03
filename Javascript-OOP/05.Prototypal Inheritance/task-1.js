@@ -78,6 +78,7 @@ function solve() {
 					throw new Error('The attribute you are attempting to remove is not present!');
 				}
 				delete this.attributes[attribute];
+				return this;
 			},
 
 			get innerHTML(){
