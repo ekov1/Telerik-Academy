@@ -65,18 +65,22 @@ function solve() {
 				this.type = type;
 				return this;
 			},
+
 			appendChild: function(child) {
 				this.children = child;
 				return this;
 			},
+
 			addAttribute: function(name, value) {
 				this.attributes = {name: name, value: value};
 				return this;
 			},
+
 			removeAttribute: function(attribute) {
 				if (!this.attributes[attribute]) {
 					throw new Error('The attribute you are attempting to remove is not present!');
 				}
+
 				delete this.attributes[attribute];
 				return this;
 			},
@@ -118,12 +122,10 @@ function solve() {
 
 				result += this.content;
 
-
 				result += ot + '/' + this.type + ct;
 				return result;
 			},
 
-			//content get/set
 			get content() {
 				return this._content || '';
 			},
@@ -136,7 +138,6 @@ function solve() {
 				}
 			},
 
-			//type get/set
 			get type() {
 				return this._type;
 			},
@@ -150,7 +151,6 @@ function solve() {
 				throw new Error('Element not recognized!');
 			},
 
-			//parent get/set
 			get parent() {
 				return this._parent;
 			},
@@ -158,7 +158,6 @@ function solve() {
 				this._parent = parent;
 			},
 
-			//children get/set
 			get children() {
 				return this._children || [];
 			},
@@ -173,7 +172,6 @@ function solve() {
 				this._children.push(child);
 			},
 
-			//attributes get/set
 			get attributes() {
 				return this._attributes;
 			},
