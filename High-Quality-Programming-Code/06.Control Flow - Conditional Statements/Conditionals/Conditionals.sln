@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitchen", "KitchenSimulator\Kitchen.csproj", "{757B88B2-C881-4140-971A-7F57A866BA31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorLoop", "RefactorLoop\RefactorLoop.csproj", "{C7C97F95-6130-47A4-A1F6-51D872213468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExam-Money", "CSharpExam-Money\CSharpExam-Money.csproj", "{239FC1DF-E251-4710-9ADB-E74FFEA4CD18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExam-EncodingSum", "CSharpExam-EncodingSum\CSharpExam-EncodingSum.csproj", "{D1B32368-507F-42F1-BB97-B2ACD8758EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExam-Cube", "CSharpExam-Cube\CSharpExam-Cube.csproj", "{BFB95D30-137C-4147-B39B-74E9F500C7D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExam-Maslan", "CSharpExam-Maslan\CSharpExam-Maslan.csproj", "{7E437886-D960-4EBD-8098-8A0DB041BF0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{757B88B2-C881-4140-971A-7F57A866BA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757B88B2-C881-4140-971A-7F57A866BA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757B88B2-C881-4140-971A-7F57A866BA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757B88B2-C881-4140-971A-7F57A866BA31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C97F95-6130-47A4-A1F6-51D872213468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C97F95-6130-47A4-A1F6-51D872213468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C97F95-6130-47A4-A1F6-51D872213468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C97F95-6130-47A4-A1F6-51D872213468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239FC1DF-E251-4710-9ADB-E74FFEA4CD18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239FC1DF-E251-4710-9ADB-E74FFEA4CD18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239FC1DF-E251-4710-9ADB-E74FFEA4CD18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239FC1DF-E251-4710-9ADB-E74FFEA4CD18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1B32368-507F-42F1-BB97-B2ACD8758EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B32368-507F-42F1-BB97-B2ACD8758EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B32368-507F-42F1-BB97-B2ACD8758EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B32368-507F-42F1-BB97-B2ACD8758EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB95D30-137C-4147-B39B-74E9F500C7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB95D30-137C-4147-B39B-74E9F500C7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB95D30-137C-4147-B39B-74E9F500C7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB95D30-137C-4147-B39B-74E9F500C7D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E437886-D960-4EBD-8098-8A0DB041BF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E437886-D960-4EBD-8098-8A0DB041BF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E437886-D960-4EBD-8098-8A0DB041BF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E437886-D960-4EBD-8098-8A0DB041BF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
