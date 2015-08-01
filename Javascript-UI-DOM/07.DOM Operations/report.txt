@@ -1,0 +1,68 @@
+
+> dom-and-jquery-tests-with-mocha@1.0.0 test C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations
+> iojs node_modules/mocha/bin/mocha  tests/
+
+
+
+  Task #1 Tests
+    Valid
+      1) Expect to add 15 divs, valid selector is provided, contents are all strings
+      2) Expect to add 15 divs, valid selector is provided, contents are all numbers
+      3) Expect to add 15 divs, valid selector is provided, contents are numbers and strings
+      4) Expect to add 15 divs, valid DOM element is provided, contents are all strings
+      5) Expect to add 15 divs, valid DOM element is provided, contents are all numbers
+      6) Expect to add 15 divs, valid DOM element is provided, contents are numbers and strings
+      7) Expect #root to contain nothing, valid DOM element is provided, contents is an empty array
+    Invalid
+      √ Expect to throw, when no params are provided
+      √ Expect to throw, when undefined is provided as selector and contents is valid
+      √ Expect to throw, when null is provided as selector and contents is valid
+      √ Expect to throw, when selector that selects nothing is provided and contents is valid
+      √ Expect to throw, when no contents is, selector is valid
+      √ Expect to throw, when undefined is provided as contents, selector is valid
+      √ Expect to throw, when null is provided as contents, selector is valid
+      √ Expect to throw and not to change the #root, when contents contains not a number or string at first position, selector is valid
+      √ Expect to throw and not to change the #root, when contents contains not a number or string at last position, selector is valid
+      √ Expect to throw and not to change the #root, when contents contains not a number or string in the middle, selector is valid
+
+
+  10 passing (266ms)
+  7 failing
+
+  1) Task #1 Tests Valid Expect to add 15 divs, valid selector is provided, contents are all strings:
+     Error: Pesho
+      at C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tasks\task-1.js:23:10
+      at Context.<anonymous> (C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tests\task-1-tests.js:40:7)
+
+  2) Task #1 Tests Valid Expect to add 15 divs, valid selector is provided, contents are all numbers:
+     Error: Pesho
+      at C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tasks\task-1.js:23:10
+      at Context.<anonymous> (C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tests\task-1-tests.js:56:7)
+
+  3) Task #1 Tests Valid Expect to add 15 divs, valid selector is provided, contents are numbers and strings:
+     Error: Pesho
+      at C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tasks\task-1.js:23:10
+      at Context.<anonymous> (C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tests\task-1-tests.js:78:7)
+
+  4) Task #1 Tests Valid Expect to add 15 divs, valid DOM element is provided, contents are all strings:
+     Error: Pesho
+      at C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tasks\task-1.js:23:10
+      at Context.<anonymous> (C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tests\task-1-tests.js:99:7)
+
+  5) Task #1 Tests Valid Expect to add 15 divs, valid DOM element is provided, contents are all numbers:
+     Error: Pesho
+      at C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tasks\task-1.js:23:10
+      at Context.<anonymous> (C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tests\task-1-tests.js:116:7)
+
+  6) Task #1 Tests Valid Expect to add 15 divs, valid DOM element is provided, contents are numbers and strings:
+     Error: Pesho
+      at C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tasks\task-1.js:23:10
+      at Context.<anonymous> (C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tests\task-1-tests.js:139:7)
+
+  7) Task #1 Tests Valid Expect #root to contain nothing, valid DOM element is provided, contents is an empty array:
+     Error: Pesho
+      at C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tasks\task-1.js:23:10
+      at Context.<anonymous> (C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\07.DOM Operations\tests\task-1-tests.js:162:7)
+
+
+
