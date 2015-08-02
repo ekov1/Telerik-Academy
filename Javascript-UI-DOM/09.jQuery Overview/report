@@ -1,0 +1,39 @@
+
+> dom-and-jquery-tests-with-mocha@1.0.0 test C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\09.jQuery Overview
+> iojs node_modules/mocha/bin/mocha  tests/
+
+
+
+  Task #1 Tests
+    √ expect to append a list with 5 LIs, when selector is valid and COUNT is 5
+    √ expect to work, when selector selects nothing
+    expect to throw
+      √ when COUNT is equal to 0
+      √ when COUNT is less than 0
+      √ when COUNT is an object
+      √ when COUNT is an array
+      √ when COUNT is an empty string
+      √ when COUNT is not-a-number string
+      √ when COUNT is undefined
+      selector is not a string
+        √ when selector is null
+        √ when selector is undefined
+        √ when selector is a number
+        √ when selector is an object
+        √ when selector is an array
+
+  Task #2 Tests
+    Valid Tests
+      √ expect nothing to change, whenm no elements with class `button` or `content`
+      √ expect to change the content of all `.button` to "hide" (68ms)
+      √ expect to hide the next content on button click, and then show it again, when there are other elements (330ms)
+      √ expect to hide the next content on button click, and then show it again (47ms)
+    Invalid
+      √ Expect to throw, when no params are provided
+      √ Expect to throw, when undefined is provided as selector
+      √ Expect to throw, when null is provided as selector
+      √ Expect to throw, when selector that selects nothing is provided
+
+
+  22 passing (727ms)
+
