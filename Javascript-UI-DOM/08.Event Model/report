@@ -1,0 +1,21 @@
+
+> dom-and-jquery-tests-with-mocha@1.0.0 test C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\08.Event Model
+> iojs node_modules/mocha/bin/mocha  tests/
+
+
+
+  Task #1 Tests
+    Valid Tests
+      √ expect nothing to change, whenm no elements with class `button` or `content`
+      √ expect to change the content of all `.button` to "hide" (40ms)
+      √ expect to hide the next content on button click, and then show it again, when there are other elements (167ms)
+      √ expect to hide the next content on button click, and then show it again
+    Invalid
+      √ Expect to throw, when no params are provided
+      √ Expect to throw, when undefined is provided as selector
+      √ Expect to throw, when null is provided as selector
+      √ Expect to throw, when selector that selects nothing is provided
+
+
+  8 passing (429ms)
+
