@@ -1,0 +1,29 @@
+
+> dom-and-jquery-tests-with-mocha@1.0.0 test C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\10.jQuery Plugins
+> iojs node_modules/mocha/bin/mocha  tests/
+
+
+
+  Task #1 Tests
+    √ expect to generate 1 element with class "dropdown-list", put the select inside it and hide it (120ms)
+    √ expect to generate 1 element with class "dropdown-list" that contains the select, and 5 divs with class "dropdown-item" (40ms)
+    √ expect the options to be intially hidden (100ms)
+    √ expect the options to be visible, when the .current is clicked (120ms)
+    1) expect the select to have the selected value and the dropdown to be hidden, when .current is clicked, and then an option is clicked
+
+
+  4 passing (570ms)
+  1 failing
+
+  1) Task #1 Tests expect the select to have the selected value and the dropdown to be hidden, when .current is clicked, and then an option is clicked:
+
+      AssertionError: expected '1' to equal '3'
+      + expected - actual
+
+      -1
+      +3
+      
+      at Context.<anonymous> (C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\10.jQuery Plugins\tests\task-1-tests.js:156:34)
+
+
+

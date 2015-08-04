@@ -41,7 +41,7 @@ function solve(){
 					break;
 				}
 				element = element.nextElementSibling;
-			};
+			}
 
 			if (element.className.indexOf('button') >= 0) {
 				return;
@@ -53,9 +53,8 @@ function solve(){
 				button.innerHTML = 'show';
 				element.style.display = 'none';
 			}
-		};
-	}
-
-};
+		}
+	};
+}
 
 module.exports = solve;

@@ -28,7 +28,7 @@ Create a function that takes a selector and COUNT, then generates inside a UL wi
               }
 
               $element = $(selector);
-              if ($element.length === 0) {
+              if (!$element) {
                 return;
               }
 
@@ -43,11 +43,11 @@ Create a function that takes a selector and COUNT, then generates inside a UL wi
                 var $li = $('<li />');
 
                 $li.html('List item #' + i).addClass('list-item').appendTo($ul);
-              };
+              }
 
               $element.html($ul);
 
             };
-          };
+          }
 
           module.exports = solve;
