@@ -1,0 +1,30 @@
+
+> dom-and-jquery-tests-with-mocha@1.0.0 test C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\11.HTML Templates
+> iojs node_modules/mocha/bin/mocha  tests/
+
+
+
+  Task #1 Tests
+    √ expect to generate a table with class items-table (102ms)
+    √ expect to generate a single thead in the .items-table
+    √ expect thead to has a single row
+    √ expect cells in thead to be 4 and to have the provided content
+    √ expect .items-table to contain a single tbody
+    √ expect tbody to contain COUNT rows
+    √ expect item cells in tbody to be 4 on a row, and to have the provided content
+
+  Task #2 Tests
+    √ expect to create a DIV with class .container
+    √ expect .container to has a H1 with content "Animals"
+    √ expect .container to has a UL with class .animals-list
+    √ expect .animals-list to contain COUNT LIs
+    √ expect each of the LIs in .animals-list to have the correct hrefs and contents  (41ms)
+
+  Task #3 Tests
+    √ Expect to work with the sample
+    √ Expect to work with UL and simple template
+    √ Expect to work with nested template with expressions ({{each ...}})
+
+
+  15 passing (760ms)
+
