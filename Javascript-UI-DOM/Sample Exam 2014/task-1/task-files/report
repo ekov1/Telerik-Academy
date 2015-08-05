@@ -1,0 +1,20 @@
+
+> dom-and-jquery-tests-with-mocha@1.0.0 test C:\Users\Pete\Documents\GitHub\Telerik-Academy\Javascript-UI-DOM\Sample Exam 2014\task-1\task-unit-tests
+> iojs node_modules/mocha/bin/mocha  tests/
+
+
+
+  Task #1 Tests
+    Initial .image-preview tests
+      √ expect to has a single .image-preview element (110ms)
+      √ expect .image-preview to has an image with src from the first item (48ms)
+      √ expect .image-preview to has a title with content from the first item (44ms)
+      √ expect .image-preview to has a title with content from the first item
+    Initial images list tests
+      √ expect to have COUNT .image-container elements 
+      √ expect .image-container elements to contain the titles from the items array
+      √ expect .image-container elements to contain the images from the items array
+
+
+  7 passing (593ms)
+
