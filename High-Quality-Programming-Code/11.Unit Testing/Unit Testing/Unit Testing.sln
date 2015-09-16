@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School", "School\School.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolTest", "SchoolTest\SchoolTest.csproj", "{14A05B6A-84ED-4FB9-A5B0-B4E52081765A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deck", "Deck\Deck.csproj", "{1082A75E-9E28-405E-980F-B3A4A939DB9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckTest", "DeckTest\DeckTest.csproj", "{9C97D119-79DB-4AFA-BD04-6E162706BAB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{14A05B6A-84ED-4FB9-A5B0-B4E52081765A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14A05B6A-84ED-4FB9-A5B0-B4E52081765A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14A05B6A-84ED-4FB9-A5B0-B4E52081765A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1082A75E-9E28-405E-980F-B3A4A939DB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1082A75E-9E28-405E-980F-B3A4A939DB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1082A75E-9E28-405E-980F-B3A4A939DB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1082A75E-9E28-405E-980F-B3A4A939DB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C97D119-79DB-4AFA-BD04-6E162706BAB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C97D119-79DB-4AFA-BD04-6E162706BAB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C97D119-79DB-4AFA-BD04-6E162706BAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C97D119-79DB-4AFA-BD04-6E162706BAB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
