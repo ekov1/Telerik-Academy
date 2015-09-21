@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{7D1A0F3C-7685-4C16-BCD9-D604B95EF084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{BC407518-6030-4592-AEF3-77F440D88B28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{7E805CE1-C089-4A4C-963D-8EB65D6A6502}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D1A0F3C-7685-4C16-BCD9-D604B95EF084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1A0F3C-7685-4C16-BCD9-D604B95EF084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1A0F3C-7685-4C16-BCD9-D604B95EF084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1A0F3C-7685-4C16-BCD9-D604B95EF084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC407518-6030-4592-AEF3-77F440D88B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC407518-6030-4592-AEF3-77F440D88B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC407518-6030-4592-AEF3-77F440D88B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC407518-6030-4592-AEF3-77F440D88B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E805CE1-C089-4A4C-963D-8EB65D6A6502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E805CE1-C089-4A4C-963D-8EB65D6A6502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E805CE1-C089-4A4C-963D-8EB65D6A6502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E805CE1-C089-4A4C-963D-8EB65D6A6502}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
