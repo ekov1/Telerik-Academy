@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+
 namespace Observer
 {
     public interface ISubject

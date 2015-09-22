@@ -3,8 +3,6 @@ namespace Memento
 {
     public class Character : ICharacter
     {
-        private ICharacter c;
-
         public Character(string name)
         {
             this.Name = name;
