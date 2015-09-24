@@ -17,7 +17,7 @@
             {
                 return this.list[color];
             }
-
+            
             var locust = new SmallLocustSwarm(color);
 
             list.Add(color, locust);

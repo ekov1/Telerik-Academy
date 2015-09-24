@@ -22,7 +22,7 @@ namespace Mediator
             Console.WriteLine("\n\n");
 
 
-            var gratefulCustomer = new Client("Grateful Customer", telerikTicketSystem);
+            var gratefulCustomer = new Client("Grateful Customer", telerikTicketSystem);++6
             telerikTicketSystem.Client = gratefulCustomer;
 
             gratefulCustomer.SendTicketToMediator(new Ticket("THANK YOU SO MUCH!", "I am only writing you to express my gratitude to the whole team that has helped me throughout the last few days! The problems are gone and now I can finally be productive once more! Thank you thank you thank you! Will make sure to bring cookies next time I visit Bulgaria!"));
