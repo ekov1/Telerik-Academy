@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school xmlns="urn:students">
+  <students>
+    <student>
+      <name>Pesho</name>
+      <sex>Male</sex>
+      <birthdate>10/31/89</birthdate>
+      <phone>0 888 888888</phone>
+      <email>p.esho@abv.bg</email>
+      <course>Mathematics</course>
+      <specialty>Mathematics Sciences</specialty>
+      <facultynumber>123456789</facultynumber>
+      <passedexams>
+        <exam>
+          <course>Mathematics 1</course>
+          <tutor>G. Goshev</tutor>
+          <score>5</score>
+        </exam>
+        <exam>
+          <course>Rocket Sciences</course>
+          <tutor>K. Golatcheva</tutor>
+          <score>3.5</score>
+        </exam>
+        <exam>
+          <course>Mathematics 2</course>
+          <tutor>O. Teneva</tutor>
+          <score>6</score>
+        </exam>
+      </passedexams>
+    </student>
+    <student>
+      <name>Mariya</name>
+      <sex>Female</sex>
+      <birthdate>12/05/92</birthdate>
+      <phone>0 888 888888</phone>
+      <email>marchityuyyyYy@abv.bg</email>
+      <course>Romance Philology</course>
+      <specialty>Romance Philology</specialty>
+      <facultynumber>142456789</facultynumber>
+      <passedexams>
+        <exam>
+          <course>French Level 2</course>
+          <tutor>L. Lyubomirova</tutor>
+          <score>6</score>
+        </exam>
+        <exam>
+          <course>Spanish Level 3</course>
+          <tutor>K. Golatcheva</tutor>
+          <score>4</score>
+        </exam>
+        <exam>
+          <course>Spanish Level 2</course>
+          <tutor>N. Dobrev</tutor>
+          <score>5</score>
+        </exam>
+      </passedexams>
+    </student>
+    <student>
+      <name>Jon</name>
+      <sex>Male</sex>
+      <birthdate>10/31/02</birthdate>
+      <phone>0 888 888888</phone>
+      <email>lesnow@west.eros</email>
+      <course>Fencing</course>
+      <specialty>Night's Watch</specialty>
+      <facultynumber>993456789</facultynumber>
+      <passedexams>
+        <exam>
+          <course>Sword fighting</course>
+          <tutor>E. Stark</tutor>
+          <score>3</score>
+        </exam>
+        <exam>
+          <course>Advanced Sword fighting</course>
+          <tutor>J. Mormont</tutor>
+          <score>6</score>
+        </exam>
+        <exam>
+          <course>Wildling Romance</course>
+          <tutor>Ygritte</tutor>
+          <score>6</score>
+        </exam>
+      </passedexams>
+    </student>
+  </students>
+  <enrollment>
+    <dates>
+      <date>04/10/2016</date>
+      <date>04/13/2016</date>
+      <date>06/06/2016</date>
+      <date>06/07/2016</date>
+      <date>02/02/2017</date>
+    </dates>
+    <gpa>4.5</gpa>
+  </enrollment>
+  <teachers>
+    <teacher>
+      <name>J. Mormont</name>
+      <certification>Certified in Sword Fighting</certification>
+    </teacher>
+    <teacher>
+      <name>L. Lyubomirova</name>
+      <certification>Certified in Teaching French</certification>
+    </teacher>
+  </teachers>
+</school>
