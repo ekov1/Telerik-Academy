@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="students.xslt" ?>
-<school xmlns="urn:students">
+<school xmlns:students="urn:students-ninjas">
   <students>
     <student>
       <name>Pesho</name>
       <sex>Male</sex>
-      <birthdate>10/31/89</birthdate>
+      <birthdate>1989-10-31</birthdate>
       <phone>0 888 888888</phone>
       <email>p.esho@abv.bg</email>
       <course>Mathematics</course>
@@ -32,7 +32,7 @@
     <student>
       <name>Mariya</name>
       <sex>Female</sex>
-      <birthdate>12/05/92</birthdate>
+      <birthdate>1992-12-05</birthdate>
       <phone>0 888 888888</phone>
       <email>marchityuyyyYy@abv.bg</email>
       <course>Romance Philology</course>
@@ -59,7 +59,7 @@
     <student>
       <name>Jon</name>
       <sex>Male</sex>
-      <birthdate>10/31/02</birthdate>
+      <birthdate>2002-10-31</birthdate>
       <phone>0 888 888888</phone>
       <email>lesnow@west.eros</email>
       <course>Fencing</course>
@@ -86,11 +86,11 @@
   </students>
   <enrollment>
     <dates>
-      <date>04/10/2016</date>
-      <date>04/13/2016</date>
-      <date>06/06/2016</date>
-      <date>06/07/2016</date>
-      <date>02/02/2017</date>
+      <date><day>2016-04-10</day></date>
+      <date><day>2016-04-13</day></date>
+      <date><day>2016-06-06</day></date>
+      <date><day>2016-06-07</day></date>
+      <date><day>2017-02-02</day></date>
     </dates>
     <gpa>4.5</gpa>
   </enrollment>

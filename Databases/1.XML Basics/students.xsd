@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:students" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema
+  attributeFormDefault="unqualified"
+  elementFormDefault="qualified"
+  targetNamespace="urn:students-ninjas"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
   <xs:element name="school">
     <xs:complexType>
       <xs:sequence>
@@ -11,7 +16,7 @@
                   <xs:sequence>
                     <xs:element name="name" type="xs:string" />
                     <xs:element name="sex" type="xs:string" />
-                    <xs:element name="birthdate" type="xs:string" />
+                    <xs:element name="birthdate" type="xs:date" />
                     <xs:element name="phone" type="xs:string" />
                     <xs:element name="email" type="xs:string" />
                     <xs:element name="course" type="xs:string" />
@@ -44,7 +49,13 @@
               <xs:element name="dates">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element maxOccurs="unbounded" name="date" type="xs:string" />
+                    <xs:element maxOccurs="unbounded" name="date">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="day" type="xs:date" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
