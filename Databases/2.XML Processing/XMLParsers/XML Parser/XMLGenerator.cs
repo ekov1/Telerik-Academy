@@ -9,11 +9,9 @@ namespace XML_Parser
     {
         public XDocument GenerateCustomXML(int entries)
         {
-            IList<Album> data = this.GenerateAlbums(entries);
+            var data = this.GenerateAlbums(entries);
 
-            XDocument doc = new XDocument();
-
-            doc.Declaration = new XDeclaration("1.0", "utf-8", null);
+            XDocument doc = new XDocument {Declaration = new XDeclaration("1.0", "utf-8", null)};
 
             var root = new XElement("catalogue");
 
@@ -21,20 +19,20 @@ namespace XML_Parser
 
             foreach (var entry in data)
             {
-                var album = new XElement("album");
-                album.Add(new XElement("name", entry.Name));
-                album.Add(new XElement("artist", entry.Artist));
-                album.Add(new XElement("year", entry.Year));
-                album.Add(new XElement("producer", entry.Producer));
-                album.Add(new XElement("price", entry.Price));
+                var album = new XElement("album", 
+                    new XElement("name", entry.Name), 
+                    new XElement("artist", entry.Artist), 
+                    new XElement("year", entry.Year), 
+                    new XElement("producer", entry.Producer), 
+                    new XElement("price", entry.Price));
 
                 var songs = new XElement("songs");
 
                 foreach (var song in entry.Songs)
                 {
-                    var currSong = new XElement("song");
-                    currSong.Add(new XElement("title", song.Title));
-                    currSong.Add(new XElement("duration", song.Duration));
+                    var currSong = new XElement("song", 
+                        new XElement("title", song.Title), 
+                        new XElement("duration", song.Duration));
 
                     songs.Add(currSong);
                 }
@@ -66,7 +64,7 @@ namespace XML_Parser
                 "Mnogo stanahte",
                 "Te sa cherni",
                 "Beloto",
-                "gibosoKartoniteee",
+                "gibsoKartoniteee",
                 "89",
                 "Pop Hits 2015",
                 "Le Shitty Kygo's remixes",
@@ -75,7 +73,7 @@ namespace XML_Parser
             };
             var year = new int[]
             {
-                1992, 2005, 2016, 2001, 2004, 2002, 2010, 2012, 2015
+                1998, 2005, 2016, 2001, 2004, 2002, 2010, 2012, 2015
             };
             var producer = "Drisko";
 
@@ -88,7 +86,9 @@ namespace XML_Parser
                 19.99,
                 24.99,
                 21.99,
-                2.99
+                2.99,
+                6.79,
+                29.99
             };
 
             var songs = new List<IList<Song>>();

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <catalogue>
   <album>
-    <name>Mnogo stanahte</name>
-    <artist>Pesho</artist>
-    <year>1992</year>
+    <name>89</name>
+    <artist>Mc Petko</artist>
+    <year>2004</year>
     <producer>Drisko</producer>
-    <price>14.5</price>
+    <price>19.99</price>
     <songs>
       <song>
         <title>1. Te sa zeleni</title>
@@ -22,11 +22,11 @@
     </songs>
   </album>
   <album>
-    <name>Mnogo stanahte</name>
-    <artist>Pesho</artist>
-    <year>2002</year>
+    <name>Beloto</name>
+    <artist>Rigana</artist>
+    <year>2016</year>
     <producer>Drisko</producer>
-    <price>19.99</price>
+    <price>29.99</price>
     <songs>
       <song>
         <title>1. Chervenite momcheta</title>
@@ -43,11 +43,11 @@
     </songs>
   </album>
   <album>
-    <name>Pop Hits 2015</name>
-    <artist>Lamqta</artist>
-    <year>2016</year>
+    <name>Beloto</name>
+    <artist>Rigana</artist>
+    <year>1998</year>
     <producer>Drisko</producer>
-    <price>22</price>
+    <price>19.99</price>
     <songs>
       <song>
         <title>1. Zdrasti mace</title>
@@ -62,9 +62,9 @@
   <album>
     <name>Pop Hits 2015</name>
     <artist>Lamqta</artist>
-    <year>2016</year>
+    <year>2010</year>
     <producer>Drisko</producer>
-    <price>24.99</price>
+    <price>6.79</price>
     <songs>
       <song>
         <title>1. Hills</title>
@@ -89,11 +89,11 @@
     </songs>
   </album>
   <album>
-    <name>Beloto</name>
-    <artist>Rigana</artist>
-    <year>2016</year>
+    <name>Mnogo stanahte</name>
+    <artist>Pesho</artist>
+    <year>2002</year>
     <producer>Drisko</producer>
-    <price>14.5</price>
+    <price>29.99</price>
     <songs>
       <song>
         <title>1. Te sa zeleni</title>
@@ -114,7 +114,7 @@
     <artist>Pochivni Dni</artist>
     <year>2002</year>
     <producer>Drisko</producer>
-    <price>14.5</price>
+    <price>21.99</price>
     <songs>
       <song>
         <title>1. Chervenite momcheta</title>
@@ -131,11 +131,11 @@
     </songs>
   </album>
   <album>
-    <name>Beloto</name>
-    <artist>Rigana</artist>
-    <year>2015</year>
+    <name>Le Shitty Kygo's remixes</name>
+    <artist>Snoop Kolyo</artist>
+    <year>2001</year>
     <producer>Drisko</producer>
-    <price>34</price>
+    <price>19.99</price>
     <songs>
       <song>
         <title>1. Zdrasti mace</title>
@@ -148,11 +148,11 @@
     </songs>
   </album>
   <album>
-    <name>Le Shitty Kygo's remixes</name>
-    <artist>Snoop Kolyo</artist>
-    <year>2004</year>
+    <name>89</name>
+    <artist>Mc Petko</artist>
+    <year>2010</year>
     <producer>Drisko</producer>
-    <price>22</price>
+    <price>9.99</price>
     <songs>
       <song>
         <title>1. Hills</title>
@@ -177,11 +177,11 @@
     </songs>
   </album>
   <album>
-    <name>Beloto</name>
-    <artist>Rigana</artist>
+    <name>Pop Hits 2015</name>
+    <artist>Lamqta</artist>
     <year>2012</year>
     <producer>Drisko</producer>
-    <price>15</price>
+    <price>14.5</price>
     <songs>
       <song>
         <title>1. Te sa zeleni</title>
@@ -198,9 +198,9 @@
     </songs>
   </album>
   <album>
-    <name>Mnogo stanahte</name>
-    <artist>Pesho</artist>
-    <year>2002</year>
+    <name>Zlatnite hitove na Lamqta</name>
+    <artist>KURaBEATkata</artist>
+    <year>2016</year>
     <producer>Drisko</producer>
     <price>15</price>
     <songs>
@@ -221,9 +221,9 @@
   <album>
     <name>Pop Hits 2015</name>
     <artist>Lamqta</artist>
-    <year>2012</year>
+    <year>2015</year>
     <producer>Drisko</producer>
-    <price>24.99</price>
+    <price>29.99</price>
     <songs>
       <song>
         <title>1. Zdrasti mace</title>
@@ -236,11 +236,11 @@
     </songs>
   </album>
   <album>
-    <name>Mnogo stanahte</name>
-    <artist>Pesho</artist>
+    <name>Beloto</name>
+    <artist>Rigana</artist>
     <year>2004</year>
     <producer>Drisko</producer>
-    <price>19.99</price>
+    <price>34</price>
     <songs>
       <song>
         <title>1. Hills</title>
@@ -265,11 +265,11 @@
     </songs>
   </album>
   <album>
-    <name>Zlatnite hitove na Lamqta</name>
-    <artist>KURaBEATkata</artist>
+    <name>gibsoKartoniteee</name>
+    <artist>Gosho</artist>
     <year>2016</year>
     <producer>Drisko</producer>
-    <price>9.99</price>
+    <price>21.99</price>
     <songs>
       <song>
         <title>1. Te sa zeleni</title>
@@ -286,11 +286,11 @@
     </songs>
   </album>
   <album>
-    <name>Beloto</name>
-    <artist>Rigana</artist>
-    <year>1992</year>
+    <name>90te godini</name>
+    <artist>Muhanela</artist>
+    <year>2010</year>
     <producer>Drisko</producer>
-    <price>14.5</price>
+    <price>15</price>
     <songs>
       <song>
         <title>1. Chervenite momcheta</title>
@@ -307,11 +307,11 @@
     </songs>
   </album>
   <album>
-    <name>89</name>
-    <artist>Mc Petko</artist>
-    <year>2002</year>
+    <name>Le Shitty Kygo's remixes</name>
+    <artist>Snoop Kolyo</artist>
+    <year>2010</year>
     <producer>Drisko</producer>
-    <price>14.5</price>
+    <price>29.99</price>
     <songs>
       <song>
         <title>1. Zdrasti mace</title>

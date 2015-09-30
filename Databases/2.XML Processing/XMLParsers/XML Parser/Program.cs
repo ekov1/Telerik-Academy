@@ -3,6 +3,9 @@
     using System;
     using System.Collections.Generic;
     using System.Xml;
+    using System.Xml.Linq;
+    using System.Linq;
+
 
     class Program
     {
@@ -22,13 +25,15 @@
            Console.WriteLine("catalogue.xml generated in xml/ !\n");
            */
 
-            //// Extracting all unique artists and listing their albums
-
             GetArtistsAndTheNumberOfTheirAlbumsUsingDOMParser(fileLocation);
             Console.WriteLine("\n\n");
             GetArtistsAndTheNumberOfTheirAlbumsUsingXPath(fileLocation);
             Console.WriteLine("\n\n");
             DeleteAllAlbumsWithPriceGreaterThan20UsingDOMParser(fileLocation);
+            Console.WriteLine("\n\n");
+            ExtractAllSongTitlesUsingXmlReader(fileLocation);
+            Console.WriteLine("\n\n");
+            ExtractAllSongTitlesUsingXDocumentLINQ(fileLocation);
         }
 
         private static void GetArtistsAndTheNumberOfTheirAlbumsUsingXPath(string fileLocation)
@@ -115,6 +120,41 @@
 
             Console.WriteLine("catalogueWithDeletedAlbums.xml generated in xml/ !\n");
             doc.Save("../../xml/" + "catalogueWithDeletedAlbums.xml");
+        }
+
+        private static void ExtractAllSongTitlesUsingXmlReader(string fileLocation)
+        {
+            Console.WriteLine("All song titles in the document: \n");
+            using (XmlReader reader = new XmlTextReader(fileLocation))
+            {
+                var songList = new List<string>();
+
+                while (reader.Read())
+                {
+                    if (reader.NodeType == XmlNodeType.Element && reader.Name == "title")
+                    {
+                        var songTitle = reader.ReadElementString();
+
+                        if (!songList.Contains(songTitle))
+                        {
+                            songList.Add(songTitle);
+                            Console.WriteLine(songTitle);
+                        }
+                    }
+                }
+            }
+        }
+
+        private static void ExtractAllSongTitlesUsingXDocumentLINQ(string fileLocation)
+        {
+            Console.WriteLine("All song titles in the document using XDocument and LINQ: \n");
+
+            var doc = XDocument.Load(fileLocation);
+            
+            var titles = from title in doc.Descendants("title") select title.Value;
+            // removes duplicate entries
+            titles = titles.GroupBy(x => x).Select(y => y.First());
+            Console.WriteLine(string.Join("\r\n", titles));
         }
     }
 }
