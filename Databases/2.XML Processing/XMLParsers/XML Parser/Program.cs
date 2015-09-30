@@ -1,6 +1,7 @@
 ﻿namespace XML_Parser
 {
     using System;
+    using System.Text;
     using System.Collections.Generic;
     using System.Xml;
     using System.Xml.Linq;
@@ -9,15 +10,15 @@
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var fileLocation = "../../xml/catalogue.xml";
 
-
+            Console.WriteLine("The XML Entries are generated through a custom generator, if you wish to fill in the catalogue with new entries, just uncommend the code block!\n");
            /*
            var generator = new XMLGenerator();
 
-           var numberOfEntries = 15;
+           var numberOfEntries = 25;
 
            var document = generator.GenerateCustomXML(numberOfEntries);
 
@@ -34,6 +35,8 @@
             ExtractAllSongTitlesUsingXmlReader(fileLocation);
             Console.WriteLine("\n\n");
             ExtractAllSongTitlesUsingXDocumentLINQ(fileLocation);
+            Console.WriteLine("\n\n");
+            ExtractAllAlbumsAndTheirAuthorsInXML(fileLocation);
         }
 
         private static void GetArtistsAndTheNumberOfTheirAlbumsUsingXPath(string fileLocation)
@@ -155,6 +158,46 @@
             // removes duplicate entries
             titles = titles.GroupBy(x => x).Select(y => y.First());
             Console.WriteLine(string.Join("\r\n", titles));
+        }
+
+        private static void ExtractAllAlbumsAndTheirAuthorsInXML(string fileLocation)
+        {
+            var albumsLocation = "../../xml/album.xml";
+
+            using (var reader = new XmlTextReader(fileLocation))
+            {
+                using (var writer = new XmlTextWriter(albumsLocation, Encoding.UTF8))
+                {
+                    writer.Formatting = Formatting.Indented;
+                    writer.IndentChar = '\t';
+                    writer.Indentation = 1;
+
+                    writer.WriteStartDocument();
+                    writer.WriteStartElement("albums");
+
+                    while (reader.Read())
+                    {
+                        if (reader.NodeType == XmlNodeType.Element && reader.Name == "name")
+                        {
+                            writer.WriteStartElement("album");
+                            writer.WriteStartElement("name");
+                            writer.WriteString(reader.ReadElementString());
+                            writer.WriteEndElement();
+                        }
+                        if (reader.NodeType == XmlNodeType.Element && reader.Name == "artist")
+                        {
+                            writer.WriteStartElement("artist");
+                            writer.WriteString(reader.ReadElementString());
+                            writer.WriteEndElement();
+                            writer.WriteEndElement();
+                        }
+                    }
+
+                    writer.WriteEndElement();
+                    writer.WriteEndDocument();
+                }
+            }
+            Console.WriteLine("Albums and their authors .xml generated in xml/album.xml \n");
         }
     }
 }

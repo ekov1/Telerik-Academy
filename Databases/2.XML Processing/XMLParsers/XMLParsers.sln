@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML Parser", "XML Parser\XML Parser.csproj", "{5B933B13-CBB1-49B6-B47B-658901A5661F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML Parser - Catalogue", "XML Parser\XML Parser - Catalogue.csproj", "{5B933B13-CBB1-49B6-B47B-658901A5661F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML Parser - Files", "XML Parser - Files\XML Parser - Files.csproj", "{E1B68EB0-9160-4F6A-BD4A-3CD1B731DFAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5B933B13-CBB1-49B6-B47B-658901A5661F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B933B13-CBB1-49B6-B47B-658901A5661F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B933B13-CBB1-49B6-B47B-658901A5661F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B68EB0-9160-4F6A-BD4A-3CD1B731DFAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B68EB0-9160-4F6A-BD4A-3CD1B731DFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B68EB0-9160-4F6A-BD4A-3CD1B731DFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B68EB0-9160-4F6A-BD4A-3CD1B731DFAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

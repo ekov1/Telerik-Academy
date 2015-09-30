@@ -11,7 +11,7 @@ namespace XML_Parser
         {
             var data = this.GenerateAlbums(entries);
 
-            XDocument doc = new XDocument {Declaration = new XDeclaration("1.0", "utf-8", null)};
+            XDocument doc = new XDocument { Declaration = new XDeclaration("1.0", "utf-8", null) };
 
             var root = new XElement("catalogue");
 
@@ -19,19 +19,19 @@ namespace XML_Parser
 
             foreach (var entry in data)
             {
-                var album = new XElement("album", 
-                    new XElement("name", entry.Name), 
-                    new XElement("artist", entry.Artist), 
-                    new XElement("year", entry.Year), 
-                    new XElement("producer", entry.Producer), 
+                var album = new XElement("album",
+                    new XElement("name", entry.Name),
+                    new XElement("artist", entry.Artist),
+                    new XElement("year", entry.Year),
+                    new XElement("producer", entry.Producer),
                     new XElement("price", entry.Price));
 
                 var songs = new XElement("songs");
 
                 foreach (var song in entry.Songs)
                 {
-                    var currSong = new XElement("song", 
-                        new XElement("title", song.Title), 
+                    var currSong = new XElement("song",
+                        new XElement("title", song.Title),
                         new XElement("duration", song.Duration));
 
                     songs.Add(currSong);
@@ -57,7 +57,12 @@ namespace XML_Parser
                 "Lamqta",
                 "Snoop Kolyo",
                 "Muhanela",
-                "KURaBEATkata"
+                "KURaBEATkata",
+                "Marja Mugrunden",
+                "Wightnish",
+                "PoldClay",
+                "Hans Mizzer",
+                "Mindsey Twirling"
             };
             var name = new string[]
             {
@@ -69,7 +74,15 @@ namespace XML_Parser
                 "Pop Hits 2015",
                 "Le Shitty Kygo's remixes",
                 "90te godini",
-                "Zlatnite hitove na Lamqta"
+                "Zlatnite hitove na Lamqta",
+                "Le Deamond Diaries",
+                "Behold",
+                "Sunshine",
+                "Beyond Space",
+                "Shatter Me",
+                "Swag",
+                "Bustin Jieber Hits",
+                "Golden Arrow"
             };
             var year = new int[]
             {
@@ -96,10 +109,14 @@ namespace XML_Parser
             songs.Add(new List<Song>() { new Song("1. Chervenite momcheta", 5.02), new Song("2. Loshite momcheta", 3.43), new Song("3. Tq se mqta", 6.00) });
             songs.Add(new List<Song>() { new Song("1. Zdrasti mace", 5.52), new Song("2. Chao murshoo", 2.58) });
             songs.Add(new List<Song>() { new Song("1. Hills", 4.33), new Song("2. Call me", 4.02), new Song("3. Shake it", 3.38), new Song("4. Another Generic Pop Song", 6.22), new Song("5. I see fire (Kygo)", 5.34) });
+            songs.Add(new List<Song>() { new Song("1. Break From This World", 4.53), new Song("2. Globus", 3.02), new Song("3. Coco", 3.21), new Song("4. Ceremonials", 4.42), new Song("5. Dark Colours", 5.21) });
+            songs.Add(new List<Song>() { new Song("1. V Pop", 3.12), new Song("2. Heist", 412), new Song("3. Night Vision", 3.38), new Song("4. Fake Tlight", 5.21), new Song("5. Mindsey Twirling", 5.34) });
+            songs.Add(new List<Song>() { new Song("1. Chervenite momcheta", 5.02), new Song("2. Loshite momcheta", 3.43), new Song("3. Tq se mqta", 6.00) });
+            songs.Add(new List<Song>() { new Song("1. Dont believe what they say", 5.52), new Song("2. 6-feet underground", 2.34), new Song("3. Baby Oooh", 6.00), new Song("4. Down on ze ground", 4.2), new Song("5. The Grey", 3.28), new Song("6. Off with her head", 3.06) });
 
-            var artistRNG = new Random();
-            var namesRNG = new Random();
-            var yearsRNG = new Random();
+            var artistRNG = new Random(12355);
+            var namesRNG = new Random(45622);
+            var yearsRNG = new Random(78911);
 
             for (int i = 0; i < entries; i++)
             {
