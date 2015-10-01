@@ -1,4 +1,8 @@
-﻿namespace XML_Parser
+﻿using System.Runtime.InteropServices;
+using System.Xml.Schema;
+using System.Xml.Xsl;
+
+namespace XML_Parser
 {
     using System;
     using System.Text;
@@ -14,6 +18,11 @@
         {
             var fileLocation = "../../xml/catalogue.xml";
 
+            Console.WriteLine("---- DISCLAIMER: ----");
+            Console.WriteLine("-- This project holds all the xml manipulation related to the catalogue tasks --");
+            Console.WriteLine("-- Look for the implementation in the Program.cs of the project -- ");
+            Console.WriteLine("-- For the other tasks related to the local file system open the XML Parser - Files project --");
+            Console.WriteLine("--------\n");
             Console.WriteLine("The XML Entries are generated through a custom generator, if you wish to fill in the catalogue with new entries, just uncommend the code block!\n");
            /*
            var generator = new XMLGenerator();
@@ -37,6 +46,14 @@
             ExtractAllSongTitlesUsingXDocumentLINQ(fileLocation);
             Console.WriteLine("\n\n");
             ExtractAllAlbumsAndTheirAuthorsInXML(fileLocation);
+            Console.WriteLine("\n\n");
+            GetAllNewAlbumsPricesUsingXPath(fileLocation);
+            Console.WriteLine("\n\n");
+            GetAllNewAlbumsPricesUsingLINQ(fileLocation);
+            Console.WriteLine("\n\n");
+            XslTransformToHtml(fileLocation);
+            Console.WriteLine("\n\n");
+            ValidateXmlAgainstXsd(fileLocation);
         }
 
         private static void GetArtistsAndTheNumberOfTheirAlbumsUsingXPath(string fileLocation)
@@ -108,7 +125,7 @@
 
             foreach (XmlNode node in root.ChildNodes)
             {
-                var price = Double.Parse(node["price"].InnerText);
+                var price = double.Parse(node["price"].InnerText);
                 
                 if (price > 20)
                 {
@@ -198,6 +215,53 @@
                 }
             }
             Console.WriteLine("Albums and their authors .xml generated in xml/album.xml \n");
+        }
+
+        private static void GetAllNewAlbumsPricesUsingXPath(string fileLocation)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(fileLocation);
+            var queryPath = "/catalogue/album/price[../year>2010]";
+
+            XmlNodeList prices = doc.SelectNodes(queryPath);
+
+            Console.WriteLine("Prices of all albums released no later than 5 years ago Using XPath: \n");
+            foreach (XmlNode price in prices)
+            {
+                Console.Write(price.InnerText + ", ");
+            }
+        }
+
+        private static void GetAllNewAlbumsPricesUsingLINQ(string fileLocation)
+        {
+            var doc = XDocument.Load(fileLocation);
+
+            var prices = doc.Descendants("album").Where(x => int.Parse(x.Element("year").Value) > 2010).Select(x => x.Element("price").Value).ToList();
+
+            Console.WriteLine("Prices of all albums released no later than 5 years ago Using LINQ: \n");
+            Console.WriteLine(string.Join(", ", prices));
+        }
+
+        private static void XslTransformToHtml(string fileLocation)
+        {
+            XslCompiledTransform xslt = new XslCompiledTransform();
+            xslt.Load("../../xml/catalogue.xslt");
+            xslt.Transform(fileLocation, "../../xml/catalogue.html");
+            Console.WriteLine("Catalogue.xml as HTML generated in xml/catalogue.html");
+        }
+
+        private static void ValidateXmlAgainstXsd(string fileLocation)
+        {
+            var schemas = new XmlSchemaSet();
+            schemas.Add(string.Empty, "../../xml/catalogue.xsd");
+
+            XDocument doc = XDocument.Load(fileLocation);
+            XDocument invalidDoc = XDocument.Load("../../xml/invalidCatalogue.xml");
+
+            Console.WriteLine("Validating a valid Xml against xsd results: ");
+            doc.Validate(schemas, (sender, args) => Console.WriteLine(args.Message));
+            Console.WriteLine("\nValidating an invalid xml against xsd results: ");
+            invalidDoc.Validate(schemas, (sender, args) => Console.WriteLine(args.Message));
         }
     }
 }

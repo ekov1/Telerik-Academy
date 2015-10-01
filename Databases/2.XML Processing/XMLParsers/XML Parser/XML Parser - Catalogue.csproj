@@ -51,9 +51,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="xml\catalogue.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="xml\" />
+    <Content Include="xml\album.xml" />
+    <Content Include="xml\catalogue.html" />
+    <Content Include="xml\catalogue.xml" />
+    <Content Include="xml\catalogue.xslt" />
+    <Content Include="xml\catalogueWithDeletedAlbums.xml" />
+    <Content Include="xml\invalidCatalogue.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
