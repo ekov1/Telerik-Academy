@@ -47,17 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Url.cs" />
+    <Compile Include="Models\Video.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="files\ta-yt-feed.json" />
+    <None Include="Output Files\ta-yt-feed.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="files\ta-yt-feed.xml" />
+    <Content Include="Output Files\parsedFeed.html" />
+    <Content Include="Output Files\ta-yt-feed.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

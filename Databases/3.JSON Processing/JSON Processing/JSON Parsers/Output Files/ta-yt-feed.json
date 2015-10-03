@@ -27,6 +27,132 @@
     "published": "2011-06-24T15:53:13+00:00",
     "entry": [
       {
+        "id": "yt:video:Wu1K7UHk9XA",
+        "yt:videoId": "Wu1K7UHk9XA",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Моделиране на данни",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=Wu1K7UHk9XA"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-10-02T13:01:01+00:00",
+        "updated": "2015-10-02T23:32:28+00:00",
+        "media:group": {
+          "media:title": "Моделиране на данни",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/Wu1K7UHk9XA?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i4.ytimg.com/vi/Wu1K7UHk9XA/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Моделиране на данни\nКурс: Бази Данни 2015\nЛектор: Евлоги Христов\nДата: 02 Октомври 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "1",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "78"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:q20Ilob2LX0",
+        "yt:videoId": "q20Ilob2LX0",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Осигуряване на качеството на софтуера (Ники)",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=q20Ilob2LX0"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-10-02T06:33:14+00:00",
+        "updated": "2015-10-02T16:32:02+00:00",
+        "media:group": {
+          "media:title": "Осигуряване на качеството на софтуера (Ники)",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/q20Ilob2LX0?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/q20Ilob2LX0/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Осигуряване на качеството на софтуера\nКурс: Качествен програмен код 2015\nЛектор: Николай Костов\nДата: 1 октомври 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "2",
+              "@average": "3.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "50"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:qHFfV-WQgD0",
+        "yt:videoId": "qHFfV-WQgD0",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Mocking with Moq and JustMock (Ники)",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=qHFfV-WQgD0"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-10-02T06:18:00+00:00",
+        "updated": "2015-10-02T16:31:50+00:00",
+        "media:group": {
+          "media:title": "Mocking with Moq and JustMock (Ники)",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/qHFfV-WQgD0?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/qHFfV-WQgD0/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Mocking with Moq and JustMock\nКурс: Качествен програмен код 2015\nЛектор: Николай Костов\nДата: 1 октомври 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "1",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "31"
+            }
+          }
+        }
+      },
+      {
         "id": "yt:video:LWZP5S8U7Z0",
         "yt:videoId": "LWZP5S8U7Z0",
         "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
@@ -63,7 +189,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "37"
+              "@views": "92"
             }
           }
         }
@@ -82,7 +208,7 @@
           "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
         },
         "published": "2015-10-01T12:08:23+00:00",
-        "updated": "2015-10-01T12:08:23+00:00",
+        "updated": "2015-10-02T16:31:45+00:00",
         "media:group": {
           "media:title": "Mocking с Moq и JustMock",
           "media:content": {
@@ -105,7 +231,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "37"
+              "@views": "90"
             }
           }
         }
@@ -124,7 +250,7 @@
           "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
         },
         "published": "2015-09-30T22:16:30+00:00",
-        "updated": "2015-10-01T07:57:10+00:00",
+        "updated": "2015-10-02T20:44:21+00:00",
         "media:group": {
           "media:title": "Въведение в базите данни (Ники)",
           "media:content": {
@@ -141,13 +267,13 @@
           "media:description": "Лекция: Въведение в базите данни\nКурс: Бази данни 2015\nЛектор: Николай Костов\nДата: 30 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
           "media:community": {
             "media:starRating": {
-              "@count": "2",
+              "@count": "3",
               "@average": "5.00",
               "@min": "1",
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "116"
+              "@views": "222"
             }
           }
         }
@@ -189,7 +315,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "94"
+              "@views": "179"
             }
           }
         }
@@ -231,7 +357,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "125"
+              "@views": "261"
             }
           }
         }
@@ -273,7 +399,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "237"
+              "@views": "358"
             }
           }
         }
@@ -315,7 +441,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "167"
+              "@views": "188"
             }
           }
         }
@@ -357,7 +483,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "540"
+              "@views": "709"
             }
           }
         }
@@ -399,7 +525,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "443"
+              "@views": "499"
             }
           }
         }
@@ -441,7 +567,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "259"
+              "@views": "288"
             }
           }
         }
@@ -483,7 +609,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "435"
+              "@views": "442"
             }
           }
         }
@@ -525,133 +651,7 @@
               "@max": "5"
             },
             "media:statistics": {
-              "@views": "1200"
-            }
-          }
-        }
-      },
-      {
-        "id": "yt:video:AtF3KXn4b_Y",
-        "yt:videoId": "AtF3KXn4b_Y",
-        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
-        "title": "Асинхронно програмиране в C#",
-        "link": {
-          "@rel": "alternate",
-          "@href": "http://www.youtube.com/watch?v=AtF3KXn4b_Y"
-        },
-        "author": {
-          "name": "TelerikAcademy",
-          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
-        },
-        "published": "2015-09-14T12:24:26+00:00",
-        "updated": "2015-09-29T08:28:26+00:00",
-        "media:group": {
-          "media:title": "Асинхронно програмиране в C#",
-          "media:content": {
-            "@url": "https://www.youtube.com/v/AtF3KXn4b_Y?version=3",
-            "@type": "application/x-shockwave-flash",
-            "@width": "640",
-            "@height": "390"
-          },
-          "media:thumbnail": {
-            "@url": "https://i2.ytimg.com/vi/AtF3KXn4b_Y/hqdefault.jpg",
-            "@width": "480",
-            "@height": "360"
-          },
-          "media:description": "Лекция:  Асинхронно програмиране в C#\nКурс: Telerik Academy Plus\nЛектор: Георги Георгиев\nДата: 12 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
-          "media:community": {
-            "media:starRating": {
-              "@count": "5",
-              "@average": "5.00",
-              "@min": "1",
-              "@max": "5"
-            },
-            "media:statistics": {
-              "@views": "523"
-            }
-          }
-        }
-      },
-      {
-        "id": "yt:video:FqghM0Hpfzk",
-        "yt:videoId": "FqghM0Hpfzk",
-        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
-        "title": "Поведенчески шаблони (Behavioral Patterns) (Ники)",
-        "link": {
-          "@rel": "alternate",
-          "@href": "http://www.youtube.com/watch?v=FqghM0Hpfzk"
-        },
-        "author": {
-          "name": "TelerikAcademy",
-          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
-        },
-        "published": "2015-09-12T20:17:45+00:00",
-        "updated": "2015-09-28T12:56:18+00:00",
-        "media:group": {
-          "media:title": "Поведенчески шаблони (Behavioral Patterns) (Ники)",
-          "media:content": {
-            "@url": "https://www.youtube.com/v/FqghM0Hpfzk?version=3",
-            "@type": "application/x-shockwave-flash",
-            "@width": "640",
-            "@height": "390"
-          },
-          "media:thumbnail": {
-            "@url": "https://i3.ytimg.com/vi/FqghM0Hpfzk/hqdefault.jpg",
-            "@width": "480",
-            "@height": "360"
-          },
-          "media:description": "Лекция: Поведенчески шаблони (Behavioral Patterns) (Ники)\nКурс: Качествен програмен код 2015\nЛектор: Николай Костов\nДата: 11 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
-          "media:community": {
-            "media:starRating": {
-              "@count": "3",
-              "@average": "5.00",
-              "@min": "1",
-              "@max": "5"
-            },
-            "media:statistics": {
-              "@views": "752"
-            }
-          }
-        }
-      },
-      {
-        "id": "yt:video:srtNcldlcZg",
-        "yt:videoId": "srtNcldlcZg",
-        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
-        "title": "Примерна проверка на изпит: \"Fortune Cookies\", JavaScript Apps 2015",
-        "link": {
-          "@rel": "alternate",
-          "@href": "http://www.youtube.com/watch?v=srtNcldlcZg"
-        },
-        "author": {
-          "name": "TelerikAcademy",
-          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
-        },
-        "published": "2015-09-11T14:32:23+00:00",
-        "updated": "2015-09-15T14:04:26+00:00",
-        "media:group": {
-          "media:title": "Примерна проверка на изпит: \"Fortune Cookies\", JavaScript Apps 2015",
-          "media:content": {
-            "@url": "https://www.youtube.com/v/srtNcldlcZg?version=3",
-            "@type": "application/x-shockwave-flash",
-            "@width": "640",
-            "@height": "390"
-          },
-          "media:thumbnail": {
-            "@url": "https://i4.ytimg.com/vi/srtNcldlcZg/hqdefault.jpg",
-            "@width": "480",
-            "@height": "360"
-          },
-          "media:description": "Лекция: Примерна проверка на изпит: \"Fortune Cookies\", JavaScript Apps 2015\nКурс: JavaScript приложения 2015\nЛектор: Дончо Минков\nДата: 11 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
-          "media:community": {
-            "media:starRating": {
-              "@count": "2",
-              "@average": "5.00",
-              "@min": "1",
-              "@max": "5"
-            },
-            "media:statistics": {
-              "@views": "564"
+              "@views": "1229"
             }
           }
         }
