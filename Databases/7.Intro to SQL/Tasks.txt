@@ -1,0 +1,114 @@
+4.
+SELECT * FROM dbo.Departments
+
+5.
+SELECT dbo.Departments.Name FROM dbo.Departments
+
+6.
+SELECT dbo.Employees.Salary FROM dbo.Employees
+
+7.
+SELECT dbo.Employees.FirstName + ' ' + dbo.Employees.LastName as FullName
+FROM dbo.Employees
+
+8.
+SELECT dbo.Employees.FirstName + '.' + dbo.Employees.LastName + '@telerik.com' as [Full Email Addresses]
+FROM dbo.Employees
+
+9.
+SELECT DISTINCT dbo.Employees.Salary FROM dbo.Employees
+
+10.
+SELECT *
+FROM dbo.Employees
+WHERE dbo.Employees.JobTitle = 'Sales Representative'
+
+11.
+SELECT dbo.Employees.FirstName + ' ' + dbo.Employees.LastName as [Full Name]
+FROM dbo.Employees
+WHERE dbo.Employees.FirstName LIKE 'SA%'
+
+12.
+SELECT dbo.Employees.FirstName + ' ' + dbo.Employees.LastName as [Full Name]
+FROM dbo.Employees
+WHERE dbo.Employees.LastName LIKE '_ei_'
+
+13.
+SELECT dbo.Employees.FirstName + ' ' + dbo.Employees.LastName as [Full Name]
+FROM dbo.Employees
+WHERE dbo.Employees.Salary >= 20000 AND dbo.Employees.Salary <= 30000
+
+14.
+SELECT dbo.Employees.FirstName + ' ' + dbo.Employees.LastName as [Full Name]
+FROM dbo.Employees
+WHERE dbo.Employees.Salary = 25000
+	OR dbo.Employees.Salary = 14000
+	OR dbo.Employees.Salary = 12500
+	OR dbo.Employees.Salary = 23600
+
+15.
+SELECT *
+FROM dbo.Employees
+WHERE dbo.Employees.ManagerID IS NULL
+
+16.
+SELECT *
+FROM dbo.Employees
+WHERE dbo.Employees.Salary > 50000
+ORDER BY dbo.Employees.Salary DESC
+
+17.
+SELECT TOP 5 *
+FROM dbo.Employees
+ORDER BY dbo.Employees.Salary DESC
+
+18.
+SELECT *
+FROM dbo.Employees
+INNER JOIN dbo.Addresses ON dbo.Employees.AddressID = dbo.Addresses.AddressID
+
+19.
+SELECT e.FirstName + ' ' + e.LastName AS FullName, a.AddressText
+FROM Employees e, Addresses a
+WHERE e.AddressID = a.AddressID
+
+20.
+SELECT e.FirstName + ' ' + e.LastName AS Employee, m.FirstName + ' ' + m.LastName AS Manager
+FROM Employees e
+JOIN Employees m
+	ON e.ManagerID = m.EmployeeID
+
+21.
+Join the 3 tables: Employees e, Employees m and Addresses a.
+SELECT e.FirstName + ' ' + e.LastName AS Employee, m.FirstName + ' ' + m.LastName AS Manager, a.AddressText AS Address
+FROM Employees e
+JOIN Employees m
+	ON e.ManagerID = m.EmployeeID
+	JOIN Addresses a
+		ON e.AddressID = a.AddressID
+
+22.
+SELECT Name AS DepartmentsAndTown
+FROM Departments
+UNION
+SELECT Name AS DepartmentsAndTown
+FROM Towns
+
+23.
+Use right outer join. Rewrite the query to use left outer join.
+SELECT e.FirstName + ' ' + e.LastName AS Employee, m.FirstName + ' ' + m.LastName AS Manager
+FROM Employees e
+RIGHT JOIN Employees m
+	ON e.ManagerID = m.EmployeeID
+
+SELECT e.FirstName + ' ' + e.LastName AS Employee, m.FirstName + ' ' + m.LastName AS Manager
+FROM Employees e
+LEFT JOIN Employees m
+	ON e.ManagerID = m.EmployeeID
+
+24.
+SELECT e.FirstName + ' ' + e.LastName AS Employee,d.Name ,e.HireDate
+FROM Employees e
+   JOIN Departments d
+    ON e.DepartmentID = d.DepartmentID AND (d.Name = 'Sales' OR d.Name = 'Finance')
+AND e.HireDate BETWEEN '1995-01-01 00:00:00' AND '2005-12-31 00:00:00'
