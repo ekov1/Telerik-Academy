@@ -25,11 +25,25 @@
             }
 
             Console.WriteLine("Now saving departments, employees and their reports to the Db, please be patient...");
-            Console.WriteLine(@"This normally takes between 3 and 5 minutes, leave it to work in background, or set" +
-                              "The second parameter of the GenerateEmployees method to a lower number (5) to make it quick!" +
-                              "Thank you :)");
+            Console.WriteLine("This normally takes between 3 and 5 minutes, leave it to work in background, or set" +
+                              "\nThe second parameter of the GenerateEmployees method to a lower number (5) to make it quicker!" +
+                              "\nThank you :)");
 
             db.SaveChanges();
+
+            var projects = ProjectsImporter.GenerateProjects(200);
+
+            for (int i = 0; i < projects.Count; i++)
+            {
+                db.Projects.Add(projects[i]);
+            }
+
+            Console.WriteLine(@"Now saving projects with already created employees from the db, this should be quicker :)" +
+                              "\nThank you for being patient!");
+
+            db.SaveChanges();
+
+            Console.WriteLine("It's all over now :D !1!1!!");
         }
     }
 }

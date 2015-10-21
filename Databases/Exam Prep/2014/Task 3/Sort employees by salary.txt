@@ -1,0 +1,5 @@
+Use Company
+Select FirstName + ' ' + LastName AS FullName, Salary
+From Employees e
+Where e.Salary >= 100000 AND e.Salary <= 150000
+Order by e.Salary Asc

@@ -1,0 +1,5 @@
+Use Company
+Select d.Name, Count(e.Id)
+From Departments d
+Inner Join Employees e on d.Id = e.DepartmentId
+Group by d.Name

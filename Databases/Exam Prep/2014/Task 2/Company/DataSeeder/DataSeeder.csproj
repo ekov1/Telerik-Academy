@@ -51,6 +51,7 @@
     <Compile Include="DepartmentsImporter.cs" />
     <Compile Include="EmployeesImporter.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectsImporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

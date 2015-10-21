@@ -27,7 +27,7 @@
                     FirstName = GetShlyokaShlyoka(10, 20),
                     LastName = GetShlyokaShlyoka(10, 20),
                     Salary = rng.Next(50000, 200001),
-                    Department = departments[rng.Next(1, 100)]
+                    Department = departments[rng.Next(0, 100)]
                 };
 
                 for (int j = 0; j < reportsEach; j++)
@@ -47,8 +47,8 @@
                     FirstName = GetShlyokaShlyoka(10, 20),
                     LastName = GetShlyokaShlyoka(10, 20),
                     Salary = rng.Next(50000, 200001),
-                    Department = departments[rng.Next(1, 100)],
-                    Employee1 = listOfManagers[rng.Next(1, listOfManagers.Count)]
+                    Department = departments[rng.Next(0, 100)],
+                    Employee1 = listOfManagers[rng.Next(0, listOfManagers.Count)]
                 };
 
                 employeeList.Add(employee);
