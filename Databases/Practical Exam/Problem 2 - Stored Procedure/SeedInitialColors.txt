@@ -1,0 +1,25 @@
+USE PetStore
+GO
+
+CREATE PROC dbo.usp_SeedInitialPetColors
+AS
+	IF  NOT EXISTS (SELECT * FROM sys.tables
+	WHERE name = N'Colors' AND type = 'U')
+
+	BEGIN
+	CREATE TABLE [dbo].[Colors](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[Name] nvarchar(15)
+	) 
+	END
+	
+	IF (SELECT COUNT(*) FROM Colors) = 0
+	BEGIN
+		INSERT INTO Colors(Color) Values('black')
+		INSERT INTO Colors(Color) Values('white')
+		INSERT INTO Colors(Color) Values('red')
+		INSERT INTO Colors(Color) Values('mixed')
+	END
+GO
+
+EXEC usp_SeedInitialPetColors

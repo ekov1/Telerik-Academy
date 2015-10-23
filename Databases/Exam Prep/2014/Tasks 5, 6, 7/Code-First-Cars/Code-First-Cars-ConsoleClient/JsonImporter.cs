@@ -26,58 +26,26 @@
                 .SelectMany(json => JsonConvert.DeserializeObject<IEnumerable<CarJson>>(json))
                 .ToList();
 
-            var cities = cars.Select(x => x.Dealer.City).Distinct().ToList();
-
-            var manufacturers = cars.Select(x => x.ManufacturerName).Distinct().ToList();
-
-            foreach (var city in cities)
-            {
-                data.Cities.Add(new City
-                {
-                    Name = city
-                });
-
-                data.SaveChanges();
-            }
-
-            foreach (var manufacturer in manufacturers)
-            {
-                data.Manufacturers.Add(new Manufacturer
-                {
-                    Name = manufacturer
-                });
-
-                data.SaveChanges();
-            }
-
-            data.Dispose();
-            data = new CarsDbContext();
-
-            data.Configuration.AutoDetectChangesEnabled = false;
-            data.Configuration.ValidateOnSaveEnabled = false;
-
-            var citiesFromDb = data.Cities.ToList();
-            var manuFromDb = data.Manufacturers.ToList();
+            var citiesHash = new HashSet<string>();
+            var manuHash = new HashSet<string>();
 
             foreach (var car in cars)
             {
-                var dealerCity = citiesFromDb.FirstOrDefault(x => x.Name == car.Dealer.City).Id;
+                var city = car.Dealer.City;
+                var manu = car.ManufacturerName;
 
-                var manu = manuFromDb.FirstOrDefault(x => x.Name == car.ManufacturerName).Id;
-
-                data.Cars.Add(new Car
+                if (!citiesHash.Contains(city))
                 {
-                    Year = car.Year,
-                    Model = car.Model,
-                    ManufacturerId = manu,
-                    Price = car.Price,
-                    TransmissionType = (TransmissionType)car.TransmissionType,
-                    Dealer = new Dealer
-                    {
-                        Name = car.Dealer.Name,
-                        CityId = dealerCity
-                    }
-                });
+                    citiesHash.Add(city);
+                }
+
+                if (!manuHash.Contains(manu))
+                {
+                    manuHash.Add(manu);
+                }
+
+
+
             }
 
             data.SaveChanges();

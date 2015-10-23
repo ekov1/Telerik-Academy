@@ -12,7 +12,9 @@
             db.Configuration.AutoDetectChangesEnabled = false;
             db.Configuration.ValidateOnSaveEnabled = false;
 
-            var employees = EmployeesImporter.GenerateEmployees(500, 5);
+            var start = DateTime.Now;
+
+            var employees = EmployeesImporter.GenerateEmployees();
 
             for (int i = 0; i < employees.Count; i++)
             {
@@ -31,7 +33,7 @@
 
             db.SaveChanges();
 
-            var projects = ProjectsImporter.GenerateProjects(200);
+            var projects = ProjectsImporter.GenerateProjects();
 
             for (int i = 0; i < projects.Count; i++)
             {
@@ -43,7 +45,11 @@
 
             db.SaveChanges();
 
+            var end = DateTime.Now;
+
             Console.WriteLine("It's all over now :D !1!1!!");
+
+            Console.WriteLine(end-start);
         }
     }
 }

@@ -1,0 +1,35 @@
+Connection string for "PetStore" database:
+	metadata=res://*/PetStoreModel.csdl|res://*/PetStoreModel.ssdl|res://*/PetStoreModel.msl;provider=System.Data.SqlClient;provider connection string="data source=.;initial catalog=PetStore;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"
+
+Connection string for "SocialNetwork" database:
+	name="SocialNetworkDb" connectionString="Data Source=.;Initial Catalog=SocialNetwork;Integrated Security=True" providerName="System.Data.SqlClient"
+
+Relationships for "PetStore" database: 
+	Species : Pets - One to many
+	Species : Products - Many to Many
+	Countries : Species - One to many
+	Colors : Pets - One to many
+	Categories : Products - One to many
+
+Relationships for "SocialNetwork" database: 
+	UserProfiles : Posts - Many to Many
+	UserProfiles : Friendships - One to Many
+	Friendships : ChatMessages - One to Many
+	
+JSON Result files location: (fill in here)
+	Problem 5 6 7 - Code First\SocialNetwork.ConsoleClient\JsonResults
+
+Steps... to victory!:
+	Delete any previous PetStore or SocialNetwork databases from your Databases list
+
+	Execute script or load the PetStore db from the .bak file
+	Execute the stored procedure script and ensure that Color entries have been added - this will work only once
+	Start Sample Data solution and wait a couple of seconds, check back in PetStore to ensure that there are enough entries
+		(Number of entries may vary, but its usually around the asked for values)
+	Execute the SQL queries to check their validity
+	
+	Start Code First solution, normally the initializer is set to drop and create the db each time, you can change that in the Context class
+	After seeding the data from the xml files, jsons will start pouring out
+	Ensure Jsons have been added by checking in the folder.
+
+	Thank you for taking the time to follow through the steps. GOOD LUCK!	
