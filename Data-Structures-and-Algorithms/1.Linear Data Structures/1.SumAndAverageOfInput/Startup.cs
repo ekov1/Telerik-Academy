@@ -7,11 +7,11 @@
 
     public static class Startup
     {
-        // The following attribute ensures that the application is single threaded, despite the use of multi-thread specific... stuff
+        // The following attribute ensures that the application is single-threaded, despite the use of multi-thread-specific... stuff
         [STAThread]
         public static void Main()
         {
-            new[] { 15, 2, 335, 3, 7, 21 }.CopyToClipboard();
+            new[] { 15, 2, 6, 3, 7, 12, 4 }.CopyToClipboard();
 
             Console.WriteLine("A template sequence of integers has been copied to your clipboard!");
 

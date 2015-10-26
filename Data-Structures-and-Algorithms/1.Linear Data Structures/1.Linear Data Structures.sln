@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.SumAndAverageOfInput", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{F39227DB-ECB4-4B8D-887E-66CEB1754838}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.ReverseIntegers", "ReverseIntegers\2.ReverseIntegers.csproj", "{300DBA7B-BF13-4AF5-AF96-F8B76764059B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F39227DB-ECB4-4B8D-887E-66CEB1754838}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F39227DB-ECB4-4B8D-887E-66CEB1754838}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F39227DB-ECB4-4B8D-887E-66CEB1754838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{300DBA7B-BF13-4AF5-AF96-F8B76764059B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{300DBA7B-BF13-4AF5-AF96-F8B76764059B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{300DBA7B-BF13-4AF5-AF96-F8B76764059B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{300DBA7B-BF13-4AF5-AF96-F8B76764059B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
