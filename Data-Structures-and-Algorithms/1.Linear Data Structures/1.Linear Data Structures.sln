@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.SumAndAverageOfInput", "1.SumAndAverageOfInput\1.SumAndAverageOfInput.csproj", "{AA83BF85-C73A-4E76-BFBD-18492D2ADD34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{F39227DB-ECB4-4B8D-887E-66CEB1754838}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AA83BF85-C73A-4E76-BFBD-18492D2ADD34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA83BF85-C73A-4E76-BFBD-18492D2ADD34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA83BF85-C73A-4E76-BFBD-18492D2ADD34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39227DB-ECB4-4B8D-887E-66CEB1754838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39227DB-ECB4-4B8D-887E-66CEB1754838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39227DB-ECB4-4B8D-887E-66CEB1754838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39227DB-ECB4-4B8D-887E-66CEB1754838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
