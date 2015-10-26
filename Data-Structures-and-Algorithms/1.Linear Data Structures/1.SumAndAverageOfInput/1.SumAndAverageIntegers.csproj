@@ -7,8 +7,8 @@
     <ProjectGuid>{AA83BF85-C73A-4E76-BFBD-18492D2ADD34}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SumAndAverageOfInput</RootNamespace>
-    <AssemblyName>SumAndAverageOfInput</AssemblyName>
+    <RootNamespace>SumAndAverageIntegers</RootNamespace>
+    <AssemblyName>SumAndAverageIntegers</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -1,17 +1,15 @@
-﻿namespace SumAndAverageIntegers
+﻿namespace SortIntegers
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using Extensions;
 
     public static class Startup
     {
-        // The following attribute ensures that the application is single-threaded, despite the use of multi-thread-specific... stuff
         [STAThread]
         public static void Main()
         {
-            new[] { 15, 2, 6, 3, 7, 12, 4 }.CopyToClipboard();
+            new[] { 15, 2, 6, 3, 7, 12, 4, -6, -11, 8, -2, 0, 9 }.CopyToClipboard();
 
             Console.WriteLine("A template sequence of integers has been copied to your clipboard!");
 
@@ -33,8 +31,9 @@
                 }
             }
 
-            Console.WriteLine("Sum of the sequence " + intList.Sum());
-            Console.WriteLine("Average of the sequence " + intList.Average());
+            intList.Sort();
+
+            Console.WriteLine(String.Join(" ", intList));
         }
     }
 }
