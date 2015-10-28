@@ -1,16 +1,23 @@
-﻿namespace CountOccurences
+﻿namespace MajorantInArray
 {
     using System;
     using System.Collections.Generic;
 
-    public static class Startup
+    public class Startup
     {
         public static void Main()
         {
-            var intList = new List<int> { 4, 2, 2, 5, 2, 1, 3, 512, 43, 512, 21, 22, 43, 2, 3, 1, 5, 2 };
+            var intList = new List<int> { 2, 2, 3, 3, 2, 3, 4, 3, 3 };
+
+            FindMajorant(intList);
+        }
+
+        public static void FindMajorant(IList<int> intList)
+        {
+            var dominanceReq = intList.Count / 2 + 1;
 
             var intDictionary = new Dictionary<int, int>();
-                
+
             for (int i = 0; i < intList.Count; i++)
             {
                 var currentElement = intList[i];
@@ -27,8 +34,14 @@
 
             foreach (var entry in intDictionary)
             {
-                Console.WriteLine("{0} -> {1} occurences", entry.Key, entry.Value);
+                if (entry.Value >= dominanceReq)
+                {
+                    Console.WriteLine("The majorant of the array is {0}.", entry.Key);
+                    return;
+                }
             }
+
+            Console.WriteLine("No majorant is present in the array.");
         }
     }
 }
