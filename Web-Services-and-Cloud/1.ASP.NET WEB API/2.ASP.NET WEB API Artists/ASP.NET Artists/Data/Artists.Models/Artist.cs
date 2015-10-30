@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
 
     public class Artist
     {
@@ -16,6 +17,7 @@
 
         public string Name { get; set; }
 
+        [MaxLength(20)]
         public string Country { get; set; }
 
         public DateTime DateOfBirth { get; set; }
