@@ -5,7 +5,7 @@
 
     public class ArtistsData : IArtistsData
     {
-        private IArtistsDbContext context;
+        private readonly IArtistsDbContext context;
 
         public ArtistsData(IArtistsDbContext context)
         {
@@ -25,6 +25,11 @@
 
         public IRepository<Song> Songs { get; set; }
 
-        public IRepository<Album> Albums { get; set; } 
+        public IRepository<Album> Albums { get; set; }
+
+        public void SaveChanges()
+        {
+            this.context.SaveChanges();
+        }
     }
 }

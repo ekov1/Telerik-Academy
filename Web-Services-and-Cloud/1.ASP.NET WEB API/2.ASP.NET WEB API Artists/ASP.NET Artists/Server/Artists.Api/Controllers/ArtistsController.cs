@@ -25,9 +25,19 @@
             return this.Ok(res);
         }
 
+        // Register artist
         public IHttpActionResult Post(ArtistResponseModel model)
         {
-            return this.Ok();
+            var artist = new Artist
+            {
+                Name = model.Name,
+                Country = model.Country
+            };
+
+            data.Artists.Add(artist);
+            data.SaveChanges();
+
+            return this.Ok(artist.Id);
         }
     }
 }

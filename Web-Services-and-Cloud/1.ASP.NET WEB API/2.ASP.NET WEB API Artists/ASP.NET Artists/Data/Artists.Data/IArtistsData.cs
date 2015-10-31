@@ -9,6 +9,8 @@
 
         IRepository<Song> Songs { get; set; }
 
-        IRepository<Album> Albums { get; set; } 
+        IRepository<Album> Albums { get; set; }
+
+        void SaveChanges();
     }
 }

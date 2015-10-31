@@ -20,7 +20,7 @@
         [MaxLength(20)]
         public string Country { get; set; }
 
-        public DateTime DateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
 
         public virtual ICollection<Album> Albums
         {
