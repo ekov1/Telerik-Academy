@@ -16,5 +16,7 @@
 
         [ForeignKey("ArtistId")]
         public virtual Artist Artist { get; set; }
+
+        public float Duration { get; set; }
     }
 }

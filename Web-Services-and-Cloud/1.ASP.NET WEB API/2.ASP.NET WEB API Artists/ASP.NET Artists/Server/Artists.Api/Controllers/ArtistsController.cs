@@ -3,6 +3,7 @@
     using System.Linq;
     using System.Web.Http;
     using Artists.Models;
+    using AutoMapper.QueryableExtensions;
     using Data;
     using Models;
 
@@ -15,29 +16,91 @@
             this.data = new ArtistsData();
         }
 
-        public IHttpActionResult Get(int size = 10)
+        public IHttpActionResult Get()
         {
-            var res = data.Artists
+            var res = this.data.Artists
                 .All()
-                .Take(size)
+                .ProjectTo<ArtistResponseModel>()
                 .ToList();
 
             return this.Ok(res);
         }
 
-        // Register artist
-        public IHttpActionResult Post(ArtistResponseModel model)
+        public IHttpActionResult Get(int id)
         {
+            var res = this.data.Artists
+                .Find(x => x.Id == id)
+                .ProjectTo<ArtistResponseModel>()
+                .FirstOrDefault();
+
+            return this.Ok(res);
+        }
+
+        // Register artist
+        public IHttpActionResult Post([FromBody] ArtistResponseModel model)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                return this.BadRequest(this.ModelState);
+            }
+
             var artist = new Artist
             {
                 Name = model.Name,
                 Country = model.Country
             };
 
-            data.Artists.Add(artist);
-            data.SaveChanges();
+            this.data.Artists.Add(artist);
+            this.data.SaveChanges();
 
             return this.Ok(artist.Id);
+        }
+
+        public IHttpActionResult Put(int id, [FromBody] ArtistResponseModel model)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                return this.BadRequest(this.ModelState);
+            }
+
+            var artist = this.data.Artists
+                .Find(x => x.Id == id)
+                .FirstOrDefault();
+
+            if (artist == null)
+            {
+                return this.BadRequest("No artist with that Id was found!");
+            }
+
+            artist.Country = model.Country;
+            artist.Name = model.Name;
+
+            this.data.Artists.Update(artist);
+            this.data.SaveChanges();
+
+            return this.Ok(artist);
+        }
+
+        public IHttpActionResult Delete(int id)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                return this.BadRequest(this.ModelState);
+            }
+
+            var artist = this.data.Artists
+                .Find(x => x.Id == id)
+                .FirstOrDefault();
+
+            if (artist == null)
+            {
+                return this.BadRequest("No artist with that Id was found!");
+            }
+
+            this.data.Artists.Delete(artist);
+            this.data.SaveChanges();
+
+            return this.Ok(artist);
         }
     }
 }

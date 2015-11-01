@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class Artist
     {
@@ -15,6 +16,7 @@
 
         public int Id { get; set; }
 
+        [Index(IsUnique = true)]
         public string Name { get; set; }
 
         [MaxLength(20)]
