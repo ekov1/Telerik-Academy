@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E591DA
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSystem.Web", "StudentSystem.Web\StudentSystem.Web.csproj", "{2860FFC3-D1C9-4826-8DF9-AF2197497536}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSystem.Web", "StudentSystem.Web\StudentSystem.Web.csproj", "{5F8931F8-21D0-47AC-B60C-F89C54D804D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,10 +36,10 @@ Global
 		{6983E054-7E4B-4379-A2FA-1F42C3B36B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6983E054-7E4B-4379-A2FA-1F42C3B36B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6983E054-7E4B-4379-A2FA-1F42C3B36B95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2860FFC3-D1C9-4826-8DF9-AF2197497536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2860FFC3-D1C9-4826-8DF9-AF2197497536}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2860FFC3-D1C9-4826-8DF9-AF2197497536}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2860FFC3-D1C9-4826-8DF9-AF2197497536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8931F8-21D0-47AC-B60C-F89C54D804D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8931F8-21D0-47AC-B60C-F89C54D804D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8931F8-21D0-47AC-B60C-F89C54D804D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8931F8-21D0-47AC-B60C-F89C54D804D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
