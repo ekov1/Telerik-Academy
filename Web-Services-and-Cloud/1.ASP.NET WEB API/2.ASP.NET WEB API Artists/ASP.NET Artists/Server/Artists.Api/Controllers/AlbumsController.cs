@@ -21,7 +21,13 @@
         {
             var res = this.data.Albums
                 .All()
-                .ProjectTo<AlbumsController>()
+                .ProjectTo<AlbumResponseModel>()
+                //.Select(x => new AlbumResponseModel
+                //{
+                //    Producer = x.Producer,
+                //    Title = x.Title,
+                //    Year = x.Year
+                //})
                 .ToList();
 
             return this.Ok(res);
