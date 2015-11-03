@@ -4,6 +4,8 @@
 
     public class CourseResponseModel
     {
+        string Id { get; set; }
+
         [Required]
         string Name { get; set; }
 

@@ -23,6 +23,14 @@
             }
         }
 
+        public IGenericRepository<Homework> Homeworks
+        {
+            get
+            {
+                return this.GetRepository<Homework>();
+            }
+        }
+
         public IGenericRepository<Test> Tests
         {
             get

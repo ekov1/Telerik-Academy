@@ -7,6 +7,10 @@
     {
         IGenericRepository<Course> Courses { get; }
 
+        IGenericRepository<Homework> Homeworks { get; }
+
         StudentsRepository Students { get; }
+
+        void SaveChanges();
     }
 }

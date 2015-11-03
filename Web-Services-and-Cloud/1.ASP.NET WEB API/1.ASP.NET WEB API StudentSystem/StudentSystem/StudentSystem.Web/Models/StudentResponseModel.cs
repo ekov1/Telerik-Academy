@@ -1,6 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-namespace StudentSystem.Web.Models
+﻿namespace StudentSystem.Web.Models
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class StudentResponseModel
     {
         public int Id { get; set; }
