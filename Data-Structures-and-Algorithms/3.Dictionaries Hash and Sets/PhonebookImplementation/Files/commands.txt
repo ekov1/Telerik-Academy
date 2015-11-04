@@ -1,0 +1,6 @@
+﻿find(Maria)
+find(, Sofia)
+find(, Bourgas)
+find(Maria Skumria)
+find(Maria Skumria, Bourgas)
+find(, Varna)
