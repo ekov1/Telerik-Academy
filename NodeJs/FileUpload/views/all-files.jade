@@ -1,0 +1,14 @@
+doctype html
+html
+    body(style="padding: 15px")
+        div(style="margin: 0 auto; border: 1px solid gray")
+            a(href="/upload") Back to Upload
+            table
+                tr
+                    th File Name
+                    th Download
+                each file in files
+                    tr
+                        td !{file}
+                        td
+                            a(href="/file/" + file) Download file
